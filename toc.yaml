@@ -22,13 +22,7 @@ toc:
       - overview.md
       - requirements.md
 
-  - navgroup:
-      id: architecture
-      topics:
-   #   - reference-architecture.md
-      - reference-architecture-Oracle-DR across region.md
-      - reference-architecture-Oracle-DR-across Cloud and On-premises.md
-
+ 
   - navgroup:
       id: plan
       topics:
@@ -80,3 +74,10 @@ toc:
       id: help
       topics:
       - topic: topic-10.md
+
+  - navgroup:
+      id: architecture
+      topics:
+   #   - reference-architecture.md
+      - reference-architecture-Oracle-DR across region.md
+      - reference-architecture-Oracle-DR-across Cloud and On-premises.md
