@@ -8,9 +8,9 @@ subcollection: <repo-name>
 keywords:
 ---
 
-Security design decisions
+# Security design decisions
 
-{: \#Security-design}
+{: #Security-design}
 
 Security Considerations
 
