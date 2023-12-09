@@ -1,5 +1,4 @@
 ---
-
 copyright:
   years: 2023
 lastupdated: "2023-11-28"
@@ -7,63 +6,20 @@ lastupdated: "2023-11-28"
 subcollection: <repo-name>
 
 keywords:
-
 ---
-
 # Networking architecture decisions
-{: #networking-architecture}
 
-Let's write a short description...
+Here are the Key Networking Architecture decision for Power Virtual Server
 
-## Enterprise connectivity architecture decisions
-{: #enterprise-connectivity}
-
-And, then let's introduce the table. Something like: "The following are enterprise connectivity architecture decisions for this design."
-
-| Architecture Decision | Requirement | Alternative | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| Connectivity for management | Provide secure, encrypted connectivity to the cloud’s private network for management purposes. | * Client VPN for VPC \n * VPN for VPC | Client VPN for VPC | Client VPN for VPC provides client-to-site connectivity, which allows remote devices to securely connect to the VPC network using an OpenVPN software client. |
-{: caption="Table 1. Enterprise connectivity architecture decisions" caption-side="bottom"}
-
-## Network segmentation and isolation architecture decisions
-{: #network-segmentation-isolation}
-
-Intro text...
-
-| Architecture Decision | Requirement | Alternative | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| Web App Deployment | * Deploy workloads in isolated environment and enforce information flow policies. \n * Provide isolated security zones between app tiers	- Virtual Private Clouds (VPCs) | * Virtual Private Clouds (VPCs) \n * Subnets \n * Security Groups (SGs) \n * ACLs | VPCs, subnets, Security Groups (SGs) and ACLs | VPCs provide secure, virtual networks for web apps which are logically isolated from other public cloud tenants. Subnets provide a range of private IP addresses for each Web app tier within a zone. Security Groups and ACLs are used as firewalls to limit access to virtual servers and web app tiers. |
-{: caption="Table 2. Network segmentation and isolation architecture decisions" caption-side="bottom"}
-
-## Cloud native connectivity architecture decisions
-{: #cloud-native-connectivity}
-
-Intro text...
-
-| Architecture Decision | Requirement | Alternative | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| Connectivity to Cloud Services | Provide secure connection to Cloud Services | * VPC Gateway + Virtual Private Endpoints (VPE) \n * Private Cloud Service endpoints \n * Public Cloud Service Endpoints | VPC Gateway + Virtual Private Endpoints (VPE) | VPC Gateway + Virtual Private Endpoints enable connectivity to IBM Cloud services using private IP addresses allocated from a VPC subnet. |
-| VPC to VPC Connectivity | Connect two or more VPCs over private network | * Global Transit Gateway \n * Local Transit Gateway (TGW) | Local Transit Gateway (TGW) | The Local Transit Gateway enables connectivity between the Management and Workload VPCs. |
-{: caption="Table 3. Cloud native connectivity architecture decisions" caption-side="bottom"}
-
-## Load balancing architecture decisions
-{: #network-segmentation-isolation}
-
-Intro text...
-
-| Architecture Decision | Requirement | Alternative | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| Application Load Balancer | Route web user http/https requests | * VPC ALB \n * VPC NLB | VPC ALB | * VPC ALB is recommended for web-based workloads. \n * Provides layer 4 and layer 7 load balancing \n * Supports HTTP, HTTPS, and TCP requests \n * Supports SSL offloading. |
-| Local Load Balancing: App & DB Tiers | Distribute requests across zones for high availability | * Public VPC ALB \n * Private VPC ALB \n * Public VPC NLB \n * Private VPC NLB | Private ALB | The Private VPC ALB distributes traffic among virtual servers within the app and DB tiers. The VPC ALB is configured with subnets across multiple zones for multi-zone availability. |
-{: caption="Table 4. Load balancing architecture decisions" caption-side="bottom"}
-
-## Domain name system architecture decisions
-{: #dns}
-
-Intro text...
-
-| Architecture Decision | Requirement | Alternative | Decision | Rationale |
-| -------------- | -------------- | -------------- | -------------- | -------------- |
-| Public DNS | Provide DNS resolution to support use of hostnames instead of IP addresses for applications | * IBM Cloud Internet Services (CIS) \n * IBM Cloud DNS	IBM Cloud Internet Services (CIS) | IBM Cloud DNS	IBM Cloud Internet Services (CIS) | IBM Cloud Internet Services supports provisioning and configuring DNS records for public DNS resolution and can be integrated with the public VPC ALBs for the web tier. |
-{: caption="Table 5. Domain name system (DNS) architecture decisions" caption-side="bottom"}
-
+| **Aspects  **     | **Domains**                             | **Requirements**                                                                                                     | **Chosen Service**                                                           | **Decisions / Rationale**                                                                                                                                                                                                                                         |
+| ----------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Network** | From Enterprise (on-Prem) to PowerVS          | Connectivity needed between client and IBM Power Systems Virtual Server                                                    | Redundant Direct Link connect (2.0) for H/A                                        | Lower cost than Direct Link Dedicated                                                                                                                                                                                                                                   |
+|                   | From Managed Service Providers                | Secure, encrypted connectivity between MSPs and IBM Cloud                                                                  | Site to Site VPN through VPC VPN Gateway                                           | [VPN Gateway](https://cloud.ibm.com/docs/vpc?topic=vpc-using-vpn) - securely connect Virtual Private Cloud (VPC) to another private network (site-2-site) for management purposes. A VPN gateway consists of two back-end instances for high availability in the same zone |
+|                   | From PowerVS to IBM Cloud VPC                 | Access Cloud Native services in VPC                                                                                        | Redundant Direct Link (2.0) for H/A Transit Gateway                                | Direct Link and TGW, both are required for PowerVS to VPC network connectivity                                                                                                                                                                                          |
+|                   | Cloud Landing-zone Connectivity (VPC to VPC)  | Connect across multiple VPCs in a single or multi region and IBM Cloud Classic environments                                | Transit Gateway (TGW) Global Transit Gateway                                       | Use TGW to connect separate VPCs (Edge), Classic (if needed) and PowerVS. Global transit gateway to connect to environments in other regions for resiliency data replication purposes                                                                                   |
+|                   | Cloud Native Connectivity (to cloud services) | Ability to connect to cloud services over the private network                                                              | Virtual Private Endpoints                                                          | Communicate with IBM Cloud services over the private network using a virtual private endpoint (VPE)                                                                                                                                                                     |
+|                   | Network Segmentation/Isolation                | Ability to provide network isolation across workloads                                                                      | VPCs and subnets Separate PowerVS LPARs Virtual firewall appliance deployed in VPC | Native VPC isolation through the use of separate VPCs and subnets for prod, non-prod environments and separation of workload Separate PowerVS LPARs Virtual firewall appliance deployed in VPC used as the default gateway controlling all network traffic              |
+|                   | BYOIP                                         | Bring Your Own IP (BYOIP) functionality                                                                                    | GRE (Generic Routing Encapsulation) Tunnel                                         | Connecting the PowerVS to VPC for routes to be advertised across on-premises environment as well                                                                                                                                                                        |
+|                   | Load Balancing (Public)                       | Load balancing over the public network across two regions in the event of an outage (DR) for failover to the other region. | Cloud Internet Services (CIS)                                                      | Public load balancing for resiliency needs                                                                                                                                                                                                                              |
+|                   | Domain Name System (DNS)                      | Ability to resolve DNS names on site                                                                                       | IBM will continue to forward/relay the DNS to client DNS Servers onsite            | This is the default option in the absence of a specific customer requirement to manage DNS                                                                                                                                                                              |
+|                   | IDS/IPS/DDOS                                  | Intrusion detection and prevention services                                                                                | Cloud Internet Services (CIS)                                                      | CIS also provides DDoS services                                                                                                                                                                                                                                         |
