@@ -49,8 +49,8 @@ toc:
             navtitle: Compute
           - topic: storage-architecture.md
             navtitle: Storage
-          - topic: networking-architecture.md
-            navtitle: Networking
+         # - topic: networking-architecture.md
+         #   navtitle: Networking
           - topic: security-architecture.md
             navtitle: Security
           - topic: resiliency-architecture.md
