@@ -31,7 +31,7 @@ Following the Architecture Framework, the `<Pattern Name>` covers design conside
 
 The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Framework](file:////docs/architecture-framework).
 
-# Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
+## Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
 
 Power Virtual Server is a common solution component for both of the Oracle disaster recovery patterns. This section provides the PowerVS solution architecture that will be used for the Oracle disaster recovery patterns.
 

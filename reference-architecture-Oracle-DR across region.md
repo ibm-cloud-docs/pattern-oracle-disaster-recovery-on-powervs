@@ -11,13 +11,15 @@ subcollection: <repo-name>
 
 Figure 1 shows reference architecture for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
-1.  [Oracle Disaster Recovery using Oracle Data Guard](#_Disaster_recovery_using)
+[Oracle Disaster Recovery using Oracle Data Guard](#_Disaster_recovery_using)
 
 ![A screenshot of a computer Description automatically generated](image/e4b139fb7a5331e50a4c5af3cd920b36.jpg)
 
 Figure 1 Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions
 
 The architecture in figure 1 is an expansion of the Power Virtual Server Architecture provided in [section 4](#_Solution_Architecture_-). This reference architecture assumes there are additional, non-Oracle Database x86 workloads that will be hosted in the IBM Cloud VPC environment. Below are key components required for an Oracle Database deployment on Power Virtual Server and x86 workload(s) deployed on VPC in two regions.
+
+## Environment deployed in this reference architecture
 
 -   VPC environment
     -   Edge VPC cluster: this hosts security components, firewall, and other edge services which are essentials for a secure environment
@@ -36,6 +38,8 @@ The architecture in figure 1 is an expansion of the Power Virtual Server Archite
     -   Storage required for LPARS
     -   Cloud Object Storage configured for backup
 
+## 
+
 ## Oracle Disaster Recovery using Oracle Data Guard
 
 In this section, we will look at how to utilize Oracle Database Enterprise Edition and use Oracle Data Guard feature for disaster recovery. We will set up a database instance in IBM PowerVS primary region & secondary region and configure Data Guard failover for disaster recovery.
@@ -50,6 +54,8 @@ Figure 2 illustrates the reference architecture based on Oracle Data Guard.
 ![A screenshot of a computer Description automatically generated](image/3f699a0b8bdb16bf395c7c11b98f3636.png)
 
 Figure 2 Oracle Disaster Recovery across different IBM PowerVS region using Oracle Data Guard
+
+## 
 
 ## Deployment Architecture Guidance
 
@@ -69,6 +75,8 @@ Here are the key steps for setting up the Oracle database and Data Guard in IBM 
 -   Install and configure the Oracle Data Guard software
 
 Note: Best practices is to have non Production environment similar to production setup, but non-production can have tier 3 storage and lower CPU as they don’t have high performance requirements.
+
+## 
 
 ## Network Architecture Guidance
 

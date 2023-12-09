@@ -44,6 +44,8 @@ Figure 5 Oracle Disaster Recovery across Power Virtual Server environment and on
 
 The reference architect to host Oracle Database and x86 workloads on IBM cloud, includes key components required for oracle deployment on the Power Virtual Server environment.
 
+## Environment deployed as a part of this reference architecture
+
 The primary environment workloads hosted in IBM include:
 
 -   VPC environment
@@ -69,7 +71,9 @@ The primary environment workloads hosted in IBM include:
 
     *Note: Carefully consider options for synchronous and asynchronous replication when designing database replication to meet the client requirements. It is recommended that you discuss latency between environments before you decide on a replication method for Oracle.*
 
-    Table showing the components used for Oracle replication
+## Software components used for the Oracle Data Guard deployment
+
+Table showing the components used for Oracle replication
 
 | Software Component        | Target system component | Description                                         |
 |---------------------------|-------------------------|-----------------------------------------------------|
