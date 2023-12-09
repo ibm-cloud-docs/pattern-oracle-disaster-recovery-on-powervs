@@ -10,9 +10,9 @@ keywords:
 
 ---
 
-\\\# storage design decisions
+# Storage design decisions
 
-{: \\\#storage-design}
+{: #storage-design}
 
 The storage tiers in Power Systems Virtual Server are based on I/O operations per second (IOPS). It means that the performance of storage volumes is limited to the maximum number of IOPS based on volume size and storage tier.
 
