@@ -1,5 +1,4 @@
 ---
-
 copyright:
   years: 2023
 lastupdated: "2023-11-28"
@@ -39,6 +38,8 @@ b) LPARs can be deployed in a shared processor pool, which has a placement polic
 c) Users can also select the appropriate pinning option (Hard/Soft/None) from the Virtual server pinning list. Select the Hard pin option to restrict the movement of a LPAR to a different host. It is recommended to select Hard pin for LPARs running Oracle databases to control the use of licensed cores and to prevent LPM activity.
 
 d) Server placement groups provide you control over the host or server on which a new virtual machine (VM) is placed. By using server placement groups, you can apply an affinity or anti-affinity policy to each VM instance within a server placement group. After you create a placement group, you can provision a new VM instance in the placement group. When you set a placement group with an affinity policy, all VMs in that placement group are launched on the same server. When you set a placement group with an anti-affinity policy, all VMs in that placement group are launched on different servers.
+
+\# Compute Architecture Decisions
 
 | **Aspects** | **Domains**          | **Requirements**                                                                                              | **Chosen Service** | **Decisions / Rationale**                                                                                                                                                                                                    |
 |-------------|----------------------|---------------------------------------------------------------------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
