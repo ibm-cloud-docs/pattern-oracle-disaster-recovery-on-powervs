@@ -27,7 +27,7 @@ toc:
       topics:
       - reference-architecture.md
       - reference-architecture-Oracle-DR across region.md
-      - reference-architecture-Oracle-DR-across Cloud and On-premises.md
+   #    - reference-architecture-Oracle-DR-across Cloud and On-premises.md
 
   - navgroup:
       id: plan
