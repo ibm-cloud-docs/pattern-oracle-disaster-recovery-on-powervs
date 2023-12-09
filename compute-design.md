@@ -6,9 +6,7 @@ lastupdated: "2023-11-28"
 subcollection: <repo-name>
 
 keywords:
-
 ---
-
 \# Compute design decisions
 
 {: \#compute-design}
@@ -17,13 +15,13 @@ Power Virtual Servers are available with flexible hardware configurations on bot
 
 The Flexibility of IBM Power Systems Virtual Servers hardware capability includes:
 
--   Cores (CPU)
--   Memory (RAM)
--   Data volume size / volume type / performance tier
--   Network interfaces
--   Power virtual server Host Pinning Policy (soft or hard)
--   Power virtual server Host CPU Binding (dedicated or shared)
--   Reserved Capacity via Shared Processor Pool Option
+- Cores (CPU)
+- Memory (RAM)
+- Data volume size / volume type / performance tier
+- Network interfaces
+- Power virtual server Host Pinning Policy (soft or hard)
+- Power virtual server Host CPU Binding (dedicated or shared)
+- Reserved Capacity via Shared Processor Pool Option
 
 The IBM Power Systems Virtual Server environment consists of SAN Storage, Power Systems servers, PowerVM Hypervisor, and AIX Operating Systems that are certified for Oracle DB (12c, 18c, 19c) including RAC. IBM has collaborated with Oracle through our longstanding joint technical partnership to ensure IBM Power Systems Virtual Server meets the current requirements of a certified and supported stack. The environment is considered supported under these requirements as long as it runs a stack as described above. In addition, since the environment is built on LPARs, it is consistent with Oracle's current hard partitioning guidelines, as long as LPM is not used with the LPARs running Oracle DB. Oracle licensing is always based on the contract between the customer and Oracle.
 
@@ -39,10 +37,6 @@ c) Users can also select the appropriate pinning option (Hard/Soft/None) from th
 
 d) Server placement groups provide you control over the host or server on which a new virtual machine (VM) is placed. By using server placement groups, you can apply an affinity or anti-affinity policy to each VM instance within a server placement group. After you create a placement group, you can provision a new VM instance in the placement group. When you set a placement group with an affinity policy, all VMs in that placement group are launched on the same server. When you set a placement group with an anti-affinity policy, all VMs in that placement group are launched on different servers.
 
-\# Compute Architecture Decisions
 
-| **Aspects** | **Domains**          | **Requirements**                                                                                              | **Chosen Service** | **Decisions / Rationale**                                                                                                                                                                                                    |
-|-------------|----------------------|---------------------------------------------------------------------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Compute     | Management Workloads | AIX LPARS for deployment of Management tools. Consider Oracle DG management tool stack and other tools needed | PowerVS LPAR       | For DG implementation and Oracle Database management tools                                                                                                                                                                   |
-| Compute     | Workload             | Actual Oracle Workload images of LPARS.                                                                       | PowerVS LPAR       | [For Oracle DG Database Standard DG implementation, follow DG guidance](https://docs.oracle.com/en/database/oracle/oracle-database/19/haovw/oracle-data-guard-best-practices.html#GUID-C3A78B07-6584-4380-8D53-E5B831A5894C) |
-| Compute     | VPC                  | To Host Common Edge, Management, and non-Oracle Workloads on this environment                                 | IBM VPC VSI        | X86 and connect to all cloud services                                                                                                                                                                                        |
+|  |  |  |  |  |
+| - | - | - | - | - |
