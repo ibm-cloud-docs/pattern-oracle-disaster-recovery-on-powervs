@@ -70,7 +70,7 @@ toc:
       id: reference
       topics:
       - references-powervs.md
-      - reference-architecture.md
+      #- reference-architecture.md
 
   - navgroup:
       id: help
@@ -83,3 +83,4 @@ toc:
    #   - reference-architecture.md
       - reference-architecture-Oracle-DR across region.md
       - reference-architecture-Oracle-DR-across Cloud and On-premises.md
+      
