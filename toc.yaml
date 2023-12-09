@@ -4,16 +4,16 @@
 ---
 toc:
   properties:
-    subcollection: <repo-name>
+    subcollection: pattern-oracle-disaster-recovery-on-powervs
     industry: industry-value
     use-case: use-case-value
     compliance: compliance-value
     audience: solution
     content-type: deployment
-    href: /docs/<repo-name>
-    path: <repo-name>
+    href: /docs/pattern-oracle-disaster-recovery-on-powervs
+    path: pattern-oracle-disaster-recovery-on-powervs
     description: Pattern description
-    label: Pattern name
+    label: Oracle Disaster Recovery on IBM Power Virtual Servers
 
   entries:
   - navgroup:
