@@ -28,6 +28,7 @@ Full Site Failover Best Practices
 -   A **full site failover** means that the complete site fails over to another site with a new set of application tiers and a new primary database.
 -   Complete site failure results in both the application and database tiers becoming unavailable. To maintain availability, application users must be redirected to a secondary site that hosts a redundant application tier and a synchronized copy of the production database.
 
-Note:
+
+  Note:
 
 In using Active Data Guard, the users doesn’t have to stop the sync process, the user can just read while it is being updated.
