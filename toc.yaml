@@ -45,6 +45,7 @@ toc:
       - topicgroup:
           label: Architecture decisions
           topics:
+          # - topic: compute-architecture.md
           - topic: compute-architecture.md
             navtitle: Compute
           - topic: storage-architecture.md
@@ -68,7 +69,8 @@ toc:
   - navgroup:
       id: reference
       topics:
-      - references.md
+      - references-powervs.md
+      - reference-architecture.md
 
   - navgroup:
       id: help
