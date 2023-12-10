@@ -14,7 +14,7 @@ keywords:
 
 {: \#overview}
 
-## Pattern Objective
+Pattern Objective
 
 The objective of this pattern is to provide a solution design for an Oracle Database deployment on IBM Power Virtual Server that meets disaster recovery requirements for enterprise workloads.
 
