@@ -10,11 +10,11 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-## Overview
+**Overview**
 
 {: \#overview}
 
-## Pattern Overview
+Pattern Overview
 
 The objective of this pattern is to provide a solution design for an Oracle Database deployment on IBM Power Virtual Server that meets disaster recovery requirements for enterprise workloads.
 
@@ -37,7 +37,7 @@ This pattern is intended to:
 
 ## 
 
-## Pattern Overview
+Pattern Overview
 
 This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers two resiliency patterns:
 
@@ -60,7 +60,7 @@ Following the [Architecture Framework](https://cloud.ibm.com/docs/architecture-f
 
 ## 
 
-## Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
+Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
 
 Power Virtual Server is a common solution component for both of the Oracle disaster recovery patterns. This section provides the PowerVS solution architecture that will be used for the Oracle disaster recovery patterns.
 
