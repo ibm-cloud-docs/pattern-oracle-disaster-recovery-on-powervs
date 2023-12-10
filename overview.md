@@ -14,7 +14,7 @@ keywords:
 
 {: \#overview}
 
-Pattern Objective
+## Pattern Overview
 
 The objective of this pattern is to provide a solution design for an Oracle Database deployment on IBM Power Virtual Server that meets disaster recovery requirements for enterprise workloads.
 
@@ -34,6 +34,8 @@ This pattern is intended to:
 -   Illustrate reference implementation of Oracle Data Guard on Power Virtual Server environment across IBM regions.
 
     This document is not an implementation document, but a pattern which provides guidance for Power VS architecture to be deployed across Power Virtual server environment(s) and on premises Oracle DR requirement(s).
+
+## 
 
 ## Pattern Overview
 
@@ -55,6 +57,8 @@ Following the [Architecture Framework](https://cloud.ibm.com/docs/architecture-f
 -   **Compute:** Virtual Servers
 -   **Storage:** Primary Storage, Backup Storage
 -   **Data:** Data Storage
+
+## 
 
 ## Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
 
