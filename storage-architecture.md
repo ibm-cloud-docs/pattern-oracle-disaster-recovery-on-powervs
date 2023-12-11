@@ -7,7 +7,7 @@ subcollection: <repo-name>
 
 keywords:
 ---
-**Storage Architecture Decisions**
+# **Storage Architecture Decisions**
 
 | **Aspects** | **Key Domain** | **Storage Domain** | **Requirements**                            | **Chosen Service** | **Decisions / Rationale**                                                                              |
 | ----------------- | -------------------- | ------------------------ | ------------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------ |
