@@ -5,9 +5,9 @@
 toc:
   properties:
     subcollection: pattern-oracle-disaster-recovery-on-powervs
-    industry: industry-value
-    use-case: use-case-value
-    compliance: compliance-value
+   # industry: industry-value
+   # use-case: use-case-value
+   # compliance: compliance-value
     audience: solution
     content-type: deployment
     href: /docs/pattern-oracle-disaster-recovery-on-powervs
