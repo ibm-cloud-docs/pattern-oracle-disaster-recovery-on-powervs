@@ -9,7 +9,7 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
+# Solution Components - Power Virtual Server for Oracle Disaster Recovery
 
 Power Virtual Server is a common solution component for both of the Oracle disaster recovery patterns. This section provides the PowerVS solution architecture that will be used for the Oracle disaster recovery patterns.
 
