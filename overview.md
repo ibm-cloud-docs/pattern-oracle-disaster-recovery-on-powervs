@@ -9,11 +9,11 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-**Overview**
+## **Overview**
 
-{: \#overview}
+{: #overview}
 
-Pattern Overview
+### Pattern Overview
 
 The objective of this pattern is to provide a solution design for an Oracle Database deployment on IBM Power Virtual Server that meets disaster recovery requirements for enterprise workloads.
 
@@ -33,7 +33,7 @@ This pattern is intended to:
 
   This document is not an implementation document, but a pattern which provides guidance for Power VS architecture to be deployed across Power Virtual server environment(s) and on premises Oracle DR requirement(s).
 
-Pattern Overview
+### Pattern Objective
 
 This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers two resiliency patterns:
 
@@ -54,7 +54,7 @@ Following the [Architecture Framework](https://cloud.ibm.com/docs/architecture-f
 - **Storage:** Primary Storage, Backup Storage
 - **Data:** Data Storage
 
-Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
+### Solution Architecture - Power Virtual Server for Oracle Disaster Recovery
 
 Power Virtual Server is a common solution component for both of the Oracle disaster recovery patterns. This section provides the PowerVS solution architecture that will be used for the Oracle disaster recovery patterns.
 
@@ -93,5 +93,7 @@ This section covers the IBM Power Systems Virtual Servers common solution compon
 | Service Management (Observability) | [IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-about-monitor)                                                                                                                                                                                                                                                                                                                                                                                                                                            | Apps and operational monitoring                                                                                                          |
 |                                    | [IBM Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                          | Apps and operational logs                                                                                                                |
 |                                    | [Activity Tracker Event Routing](https://cloud.ibm.com/docs/atracker?topic=atracker-about)                                                                                                                                                                                                                                                                                                                                                                                                                                              | Audit logs                                                                                                                               |
+
+### Architecture framework
 
 As mentioned earlier, the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro) is used to guide and determine the applicable aspects and domains for which architecture decisions need to be made based on customer requirements. The following sections contain the considerations and architecture decisions for the aspects and domains that are contained in the PowerVS common elements for both Oracle Resiliency solution patterns.
