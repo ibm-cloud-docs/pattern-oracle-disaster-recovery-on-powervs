@@ -7,8 +7,7 @@ subcollection: <repo-name>
 
 keywords:
 ---
-
-## [Service Management Considerations]()
+# [Service Management Considerations]()
 
 Typically, Service management tools are integrated with a centralized Service Management Ticketing, System to provide a single pane of glass for all operations activities.
 
