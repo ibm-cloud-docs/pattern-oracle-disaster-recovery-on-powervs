@@ -1,5 +1,5 @@
 {
-  "title": "Name of architecture",
+  "title": "Oracle Data Guard on IBM Power Virtual Systems Server",
   "lastupdated": "2023-04-06",
   "introduction": "This is a refeerence solution architecture to host Oracle Data Guard on IBM Power Virtual System Server environment.",
   "section_architectures": [
