@@ -30,7 +30,8 @@ Before you migrate to a newer IBM Power System, review the following checklist:
 * Set the appropriate processor compatibility mode for logical partitions (LPARs) before and after migration.
 * Plan the virtual processor (VP) and entitlement for each LPAR to best fit your operation and performance requirements.
 * Follow the I/O consideration guide.
-  ### Migration approach Table 
+  
+  ## Migration approach Table
 
 | Approach                      | Power VS options                                                                                                                                                                 | Solution Guidance                                                                                                                                                                                                                                                                                                                              |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
