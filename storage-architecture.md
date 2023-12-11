@@ -9,6 +9,7 @@ keywords:
 ---
 # **Storage Architecture Decisions**
 
+
 | **Aspects** | **Key Domain** | **Storage Domain** | **Requirements**                            | **Chosen Service** | **Decisions / Rationale**                                                                              |
 | ----------------- | -------------------- | ------------------------ | ------------------------------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | Storage           | Management Tools     | Primary Storage          | To host Oracle Management tools                   | Tier 1 Storage           | As per Oracle recommendations, for Management workloads use Tier 1                                           |
