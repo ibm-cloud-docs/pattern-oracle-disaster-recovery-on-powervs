@@ -38,7 +38,7 @@ This reference architecture assumes there are additional, non-Oracle Database x8
 
 In this section, we will look at how to utilize Oracle Database Enterprise Edition and use Oracle Data Guard feature for disaster recovery. We will set up a database instance in IBM PowerVS primary region & secondary region and configure Data Guard failover for disaster recovery.
 
-Figure 2 illustrates the reference architecture based on Oracle Data Guard.
+The figure  below illustrates the reference architecture based on Oracle Data Guard.
 
 - Two IBM Power Virtual Server environment regions i.e., for example FRA AZ1 (FRA02) and MAD AZ1 (AZ1)
 - Oracle DB is installed on IBM Power Virtual Server LPARS in two Separate Regions
