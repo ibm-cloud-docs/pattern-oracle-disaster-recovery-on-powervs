@@ -9,12 +9,11 @@ subcollection: <repo-name>
 
 Figure 1 shows reference architecture for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
-
 ![A screenshot of a computer Description automatically generated](image/e4b139fb7a5331e50a4c5af3cd920b36.jpg)
 
 Figure 1 Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions
 
-The architecture in figure 1 is an expansion of the Power Virtual Server Architecture provided in [section 4](#_Solution_Architecture_-). This reference architecture assumes there are additional, non-Oracle Database x86 workloads that will be hosted in the IBM Cloud VPC environment. Below are key components required for an Oracle Database deployment on Power Virtual Server and x86 workload(s) deployed on VPC in two regions.
+This reference architecture assumes there are additional, non-Oracle Database x86 workloads that will be hosted in the IBM Cloud VPC environment. Below are key components required for an Oracle Database deployment on Power Virtual Server and x86 workload(s) deployed on VPC in two regions.
 
 ## Environment deployed in this reference architecture
 
