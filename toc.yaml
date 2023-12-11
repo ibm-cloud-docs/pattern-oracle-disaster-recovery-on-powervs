@@ -73,11 +73,11 @@ toc:
       topics:
       - references-powervs.md
       #- reference-architecture.md
-      - migration-considerations.md
+      
   - navgroup:
       id: migrate
       topics:
-      - migration-considerations.md
+      - migration-consideration.md
      
 
   - navgroup:
