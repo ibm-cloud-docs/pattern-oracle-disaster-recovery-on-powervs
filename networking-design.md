@@ -7,7 +7,7 @@ subcollection: <repo-name>
 
 keywords:
 ---
-## Network Considerations
+# Network Considerations
 
 Networking is a key aspect of any cloud deployment that should not be overlooked. The network design should consider enterprise connectivity, latency, throughput, resiliency, and security requirements.
 
