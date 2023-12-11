@@ -1,16 +1,16 @@
 {
   "title": "Name of architecture",
   "lastupdated": "2023-04-06",
-  "introduction": "This is a description of what the user will be able to understand in this architecture pattern.",
+  "introduction": "This is a refeerence solution architecture to host Oracle Data Guard on IBM Power Virtual System Server environment.",
   "section_architectures": [
     {
-      "title": "Title of reference architecture",
-      "href": "/docs/acme-test?topic=acme-test-vpc-architecture",
+      "title": "Oracle Database Disaster Recovery between Customer DC and IBM PowerVS",
+      "href": "/docs/acme-test?topic=reference-architecture-Oracle-DR-across-Cloud-and-On-premises",
       "deployable": true
     },
     {
-      "title": "Title of reference architecture",
-      "href": "/docs/acme-test?topic=acme-test-vpc-architecture",
+      "title": "Oracle Database Disaster Recovery on IBM PowerVS Cross Region",
+      "href": "/docs/acme-test?topic=reference-architecture-Oracle-DR-across-region",
       "deployable": true
     }
   ],
