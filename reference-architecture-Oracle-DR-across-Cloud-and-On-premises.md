@@ -9,15 +9,15 @@ subcollection: <repo-name>
 
 In this section, we cover common use cases for Oracle Disaster Recovery approach between IBM Power virtual server and Customer existing Data center.
 
--  For the purpose of this document, it is assumed that the primary workload is hosted on IBM Power Systems Virtual Server workspace and the Disaster recovery is hosted in a customer or 3rd Party Data center, however the workloads can also be reversed where the secondary workload is in IBM PowerVS and the Primary workload is in the customer Data center.
+- For the purpose of this document, it is assumed that the primary workload is hosted on IBM Power Systems Virtual Server workspace and the Disaster recovery is hosted in a customer or 3rd Party Data center, however the workloads can also be reversed where the secondary workload is in IBM PowerVS and the Primary workload is in the customer Data center.
 
 ## Architecture overview
 
-Figure 4 shows high level deployment architecture with Oracle Data Guard and without Oracle Data Guard. It considers IBM PowerVS hosting as the primary site and the customer Data Center as the secondary site (DR). IBM VPC hosts common shared services such as IAM, DNS, Monitoring, management tools, and x86 workloads.
+The below figure  shows high level deployment architecture with Oracle Data Guard and without Oracle Data Guard. It considers IBM PowerVS hosting as the primary site and the customer Data Center as the secondary site (DR). IBM VPC hosts common shared services such as IAM, DNS, Monitoring, management tools, and x86 workloads.
 
 ![A screenshot of a computer Description automatically generated](image/c0f9655ee218bc34f83daffa3ad1119b.jpg)
 
-Figure 4 IBM Power Virtual Server environment and On-premises overview diagram featuring VPC and PowerVS workspace.
+Figure  IBM Power Virtual Server environment and On-premises overview diagram featuring VPC and PowerVS workspace.
 
 - Primary environment is IBM Frankfurt region and Secondary environment is customer’s existing Data Center.
 - Configure network connectivity which will be accomplished through Direct Links to primary region with VPN access for Managed Service Provider(s) (MSPs).
@@ -35,7 +35,7 @@ The Oracle Disaster recovery solution approach across IBM PowerVS and customer D
 
 ![A screenshot of a computer Description automatically generated](image/29fa5f2bef8ca6bf18ace35ca04609a9.png)
 
-Figure 5 Oracle Disaster Recovery across Power Virtual Server environment and on-premises using Oracle DG replication methods.
+Figure  Oracle Disaster Recovery across Power Virtual Server environment and on-premises using Oracle DG replication methods.
 
 The reference architect to host Oracle Database and x86 workloads on IBM cloud, includes key components required for oracle deployment on the Power Virtual Server environment.
 
@@ -63,7 +63,7 @@ The primary environment workloads hosted in IBM include:
 
     **Customer Data Center:** This is the disaster recovery site.
 - Ensure you have all hardware components configured to meet your Primary workload requirements running in the IBM Power Virtual Server environment.
-- Ensure compute, storage, networking, security requirements, and pre-requisites are addressed for Oracle to replicate across both the sites. 
+- Ensure compute, storage, networking, security requirements, and pre-requisites are addressed for Oracle to replicate across both the sites.
 
   *Note: Carefully consider options for synchronous and asynchronous replication when designing database replication to meet the client requirements. It is recommended that you discuss latency between environments before you decide on a replication method for Oracle.*
 

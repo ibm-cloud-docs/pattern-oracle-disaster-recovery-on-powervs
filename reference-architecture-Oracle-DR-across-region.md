@@ -7,11 +7,11 @@ subcollection: <repo-name>
 ---
 # Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region
 
-Figure 1 shows reference architecture for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
+Figure  shows reference architecture for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
 ![A screenshot of a computer Description automatically generated](image/e4b139fb7a5331e50a4c5af3cd920b36.jpg)
 
-Figure 1 Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions
+Figure Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions
 
 This reference architecture assumes there are additional, non-Oracle Database x86 workloads that will be hosted in the IBM Cloud VPC environment. Below are key components required for an Oracle Database deployment on Power Virtual Server and x86 workload(s) deployed on VPC in two regions.
 
@@ -47,7 +47,7 @@ Figure 2 illustrates the reference architecture based on Oracle Data Guard.
 
 ![A screenshot of a computer Description automatically generated](image/3f699a0b8bdb16bf395c7c11b98f3636.png)
 
-Figure 2 Oracle Disaster Recovery across different IBM PowerVS region using Oracle Data Guard
+Figure  Oracle Disaster Recovery across different IBM PowerVS region using Oracle Data Guard
 
 ## Deployment Architecture Guidance
 
@@ -72,9 +72,9 @@ Note: Best practices is to have non Production environment similar to production
 
 ![A diagram of a server Description automatically generated](image/37a404a1fbce991ea5793bc8ac74fd0f.jpg)
 
-Figure 3 IBM Power Virtual server Environment networking tolopogy
+Figure  IBM Power Virtual server Environment networking tolopogy
 
-Figure 3 shows required network components from customer Data center to IBM Power Systems Virtual Server
+The above Figure  shows required network components from customer Data center to IBM Power Systems Virtual Server
 
 Please ensure you have a proper networking architecture and connection established from your on-premises, Data center to IBM Power Systems virtual server workplace. Please look for guidance on [IBM docs](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-network-architecture-diagrams)
 
