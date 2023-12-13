@@ -13,6 +13,8 @@ keywords:
 
 # Migration Solution Approach
 
+## Migration Solution Approach
+
 Learn how to migrate your data and workloads to a IBM® Power Systems™ Virtual Server.
 
 When workloads are deployed on a new system, you must pay attention to its configuration and tuning to achieve the expected performance. Power Virtual Server uses different IBM Power Systems: E980 (9080-M9S), S922 (9009-22A), and S1022 (9105-22A)** **. For more information, see** **[Hardware specifications](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-about-virtual-server#hardware-specifications).
@@ -30,8 +32,8 @@ Before you migrate to a newer IBM Power System, review the following checklist:
 * Set the appropriate processor compatibility mode for logical partitions (LPARs) before and after migration.
 * Plan the virtual processor (VP) and entitlement for each LPAR to best fit your operation and performance requirements.
 * Follow the I/O consideration guide.
-  
-  ## Migration approach Table
+
+## Migration approach Table
 
 | Approach                      | Power VS options                                                                                                                                                                 | Solution Guidance                                                                                                                                                                                                                                                                                                                              |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -9,6 +9,8 @@ keywords:
 ---
 # Oracle Data Guard Considerations
 
+## Oracle Data Guard Considerations
+
 Oracle Data Guard ensures data protection, and disaster recovery for Oracle Databases. It provides a comprehensive set of services that create, maintain, manage, and monitor one or more standby databases to enable production Oracle databases to survive disasters and data corruptions. By maintaining these standby databases as copies of the production database, if the production database becomes unavailable because of a planned or an unplanned outage, Data Guard can switch standby database to the production role, minimizing the downtime associated with the outage. It can be used with traditional backup, restoration, and cluster techniques to provide a high level of data protection and data availability.
 
 ## Deciding Between Full Site Failover or Seamless Connection Failover
@@ -27,6 +29,6 @@ Full Site Failover Best Practices
 - A **full site failover** means that the complete site fails over to another site with a new set of application tiers and a new primary database.
 - Complete site failure results in both the application and database tiers becoming unavailable. To maintain availability, application users must be redirected to a secondary site that hosts a redundant application tier and a synchronized copy of the production database.
 
-##   Note:
+Note:
 
 In using Active Data Guard, the users doesn’t have to stop the sync process, the user can just read while it is being updated.
