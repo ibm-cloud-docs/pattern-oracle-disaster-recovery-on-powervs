@@ -7,7 +7,9 @@ subcollection: <repo-name>
 ---
 # Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region
 
-The reference architecture covers solution overview and details on how to design a Oracle Disaster recovery architectrue on IBM Power Virtual Server environment. 
+## Introduction
+
+The reference architecture covers solution overview and details on how to design a Oracle Disaster recovery architectrue on IBM Power Virtual Server environment.
 
 The figure  below describes an architecture approach  for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
