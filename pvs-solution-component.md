@@ -20,8 +20,8 @@ PowerVS easily integrates with IBM Public Cloud Services such as the Identity an
 
 This section covers the IBM Power Systems Virtual Servers common solution components which are used in both reference architectures:
 
--   [Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region](file:///Users/dwarakaprao/Documents/GitHub/ibm-cloud-reference-architecture/pattern-oracle-disaster-recovery-on-powervs/reference-architecture-Oracle-DR-across-region.md)
--   [Reference Architecture 2: Oracle Database Disaster Recovery between Customer DC and IBM PowerVS](file:///Users/dwarakaprao/Documents/GitHub/ibm-cloud-reference-architecture/pattern-oracle-disaster-recovery-on-powervs/reference-architecture-Oracle-DR-across-Cloud-and-On-premises.md)
+-   Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region
+-   Reference Architecture 2: Oracle Database Disaster Recovery between Customer DC and IBM PowerVS
 
     The common solution components listed in the table below are those components which are needed for both scenarios.
 
