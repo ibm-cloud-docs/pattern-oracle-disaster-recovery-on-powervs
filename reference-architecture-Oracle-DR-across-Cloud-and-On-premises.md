@@ -7,9 +7,9 @@ subcollection: <repo-name>
 ---
 # Reference Architecture 2: Oracle Database Disaster Recovery between Customer DC and IBM PowerVS
 
-In this section, we cover common use cases for Oracle Disaster Recovery approach between IBM Power virtual server and Customer existing Data center.
+This reference architecture covers solution overview and details on how to design a Oracle Disaster recovery architectrue on IBM Power Virtual Server environment and customers existing Data center.
 
-- For the purpose of this document, it is assumed that the primary workload is hosted on IBM Power Systems Virtual Server workspace and the Disaster recovery is hosted in a customer or 3rd Party Data center, however the workloads can also be reversed where the secondary workload is in IBM PowerVS and the Primary workload is in the customer Data center.
+We assume that the primary workload is hosted on IBM Power Systems Virtual Server workspace and the Disaster recovery is hosted in a customer or 3rd Party Data center, however the workloads can also be reversed where the secondary workload is in IBM PowerVS and the Primary workload is in the customer Data center.
 
 ## Architecture overview
 
