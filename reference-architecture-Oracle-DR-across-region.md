@@ -125,7 +125,8 @@ Please ensure you have a proper networking architecture and connection establish
 
 {: #design-scope}
 
-The web app multi-zone resiliency architecture covers [design considerations](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) and [architecture decisions](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) for the following aspects and domains (as defined in the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)\*):
+
+The  Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers [design considerations](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) and [architecture decisions](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) for the following aspects and domains (as defined in the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)\*):
 
 - **Compute:** Virtual Servers
 - **Storage:** Primary Storage, Backup Storage
