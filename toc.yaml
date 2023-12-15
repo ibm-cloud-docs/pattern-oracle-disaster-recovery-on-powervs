@@ -20,8 +20,8 @@ toc:
       id: overview
       topics:
       - pvs-overview.md
-      - pvs-requirements.md
-      - pvs-solution-component.md
+    #  - pvs-requirements.md
+    #  - pvs-solution-component.md
     #  - oracle-dataguard-design.md
 
  
