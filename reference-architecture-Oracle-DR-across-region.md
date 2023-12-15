@@ -121,6 +121,23 @@ Please ensure you have a proper networking architecture and connection establish
 4. PowerVS Connection to LTGW and GTGW
 5. Establish a GRE tunnel (GREa) between the Gateway Router in VPC (NGFW) **and the** customer router.
 
+## Design scope
+
+{: #design-scope}
+
+The web app multi-zone resiliency architecture covers [design considerations](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) and [architecture decisions](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) for the following aspects and domains (as defined in the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)\*):
+
+- **Compute:** Virtual Servers
+- **Storage:** Primary Storage, Backup Storage
+- **Networking:** Enterprise Connectivity, Segmentation and Isolation, Cloud Native Connectivity, Load Balancing, Domain Name System
+- **Security:** Data Security, Identity and Access Management, Application Security, Infrastructure and Endpoint Security
+- **Resiliency:** High Availability, Backup and Restore,
+- **Service Management:** Monitoring, Logging, Auditing, Alerting
+
+ ![Web app multi-zone resiliency architecture design scope](heat-map-vpc-multi-zone.svg){: caption="Figure 2. Web app multi-zone resiliency architecture design scope" caption-side="bottom"}
+
+\*The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. See [Introduction to the Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro) for more details.
+
 ## Requirements
 
 The following represents a baseline set of requirements which we believe are applicable to most clients and critical to successful Oracle Disaster Recovery deployment. This set of requirements are key considerations for a successful Disaster recovery setup of Power workloads and other co-existing applications in IBM Power Systems Virtual Server environment(s), IBM Cloud, and customer Data Center(s).
