@@ -7,13 +7,13 @@ subcollection: <repo-name>
 ---
 # Reference Architecture 2: Oracle Database Disaster Recovery between Customer DC and IBM PowerVS
 
-## Introduction
+## Architecture diagram
 
 This reference architecture covers solution overview and details on how to design a Oracle Disaster recovery architectrue on IBM Power Virtual Server environment and customers existing Data center.
 
 We assume that the primary workload is hosted on IBM Power Systems Virtual Server workspace and the Disaster recovery is hosted in a customer or 3rd Party Data center, however the workloads can also be reversed where the secondary workload is in IBM PowerVS and the Primary workload is in the customer Data center.
 
-## Architecture overview
+**Architecture overview**
 
 The below figure  shows high level deployment architecture with Oracle Data Guard and without Oracle Data Guard. It considers IBM PowerVS hosting as the primary site and the customer Data Center as the secondary site (DR). IBM VPC hosts common shared services such as IAM, DNS, Monitoring, management tools, and x86 workloads.
 
@@ -31,7 +31,7 @@ Figure  IBM Power Virtual Server environment and On-premises overview diagram fe
 - Ensure the connectivity from customer environment is established to IBM PowerVS and security aspects are considered. To address the networking requirements, ensure to follow steps at following [link](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-network-architecture-diagrams).
 - Oracle DB are installed in LPARS with multiple Tier 1 LUNs for OS and DB that are used for boot and Database executable and to store DB schema.
 
-## Oracle Disaster Recovery using Oracle Data Guard
+**Oracle Disaster Recovery using Oracle Data Guard**
 
 The Oracle Disaster recovery solution approach across IBM PowerVS and customer Data center are described below. This approach uses Oracle Data Guard to achieve Disaster recovery of Oracle DB across IBM Power Virtual Server and the customer Data Center.
 
@@ -41,7 +41,7 @@ Figure  Oracle Disaster Recovery across Power Virtual Server environment and on-
 
 The reference architect to host Oracle Database and x86 workloads on IBM cloud, includes key components required for oracle deployment on the Power Virtual Server environment.
 
-## Environment deployed as a part of this reference architecture
+**Environment deployed as a part of this reference architecture**
 
 The primary environment workloads hosted in IBM include:
 
@@ -69,7 +69,7 @@ The primary environment workloads hosted in IBM include:
 
   *Note: Carefully consider options for synchronous and asynchronous replication when designing database replication to meet the client requirements. It is recommended that you discuss latency between environments before you decide on a replication method for Oracle.*
 
-## Software components used for the Oracle Data Guard deployment
+**Software components used for the Oracle Data Guard deployment**
 
 Table showing the components used for Oracle replication
 
@@ -81,7 +81,7 @@ Note:
 
 Active Data Guard allows you to read while the data is syncing. There is no need to pause they sync process
 
-## Deployment Architecture Guidance
+**Deployment Architecture Guidance**
 
 Ensure you have completed the pre-requisites for IBM Power Virtual Server environment connectivity. Follow the necessary steps for a secured connection needed for a Power Virtual server environment. The Customer Data center connection to IBM Power virtual servers details are described here [cloud docs](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-network-architecture-diagrams). For additional information please refere to reference section for helpful links.
 
@@ -93,28 +93,3 @@ Ensure you have completed the pre-requisites for IBM Power Virtual Server enviro
 1. [Install and Configure AIX LPARs and LUNs](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
 2. Install Oracle DB and configure LUNs on tier 1.
 3. Configure and test Oracle Data Guard across both the site ensuring replication across sites meets your objective.
-
-## Backup & Restore Architecture Guidance
-
-A major consideration when designing a backup solution is the client’s RTO/RPO requirements. Ensure a local copy of backup is scheduled and completes successfully at each site. Restores from backup should be tested. refer to resilency section for backup and restore.
-
-- All Production Databases require a Backup/Restore infrastructure. Ensure you have infrastructure in the Power Virtual Server environment and the client Data Center.
-- It is recommended to perform RMAN Oracle Database backups in both the IBM Power Virtual Server environment and the client data center environment. RMAN provides database consistent level backups. This will ensure point in time recovery in both primary and secondary environments.
-- It is recommended to use IBM Storage Protect for file and OS backup in the Power Virtual Server environment.
-
-## Networking Architecture Guidance
-
-Networking is covered in networking design and architecture section
-
-## Disaster Recovery Architecture Guidance
-
-It is essential to consider both the local high availability and the remote disaster recovery requirements when solutioning for Oracle Data Guard.
-
-Baseline components of the Oracle Data Guard disaster recovery architecture include:
-
-- Asynchronous Replication: Use Data Guard with asynchronous replication to the DR site to minimize the impact on performance of production Databases.
-- Network: Ensure a direct link is setup between the IBM Power Virtual Server environment and customer Data Center sites.
-- Version of LPARS across both sites.
-- Oracle Versions across both sites.
-- Oracle Enterprise edition licenses.
-- Oracle pre-requisite for Data Guard. ([refer to Oracle requirements on oracle site](https://docs.oracle.com/en/database/oracle/oracle-database/23/dgbkr/oracle-data-guard-broker-installation-requirements.html#GUID-21393DF3-FD7E-44AA-A90C-6533E03CBDDA))

@@ -77,6 +77,17 @@ In using Active Data Guard, the users doesn’t have to stop the sync process, t
 When designing a disaster recovery (DR) architecture with Oracle Data Guard, it is essential to consider both the local high availability and the remote disaster recovery requirements.
 
 - For transactional systems, like Oracle database, the recommendation to ensure high performance, transactional integrity and recoverability, is asynchronous replication to reduce the latency and bandwidth requirements of data transfer. This allows faster and efficient data replication, without affecting the performance or availability of your primary database
-- Network: Ensure a robust and low-latency network connection between the primary and DR sites, preferably using a Global Transit Gateway
+- Asynchronous Replication: Use Data Guard with asynchronous replication to the DR site to minimize the impact on performance of production Databases.
+- Network: Ensure a direct link is setup between the IBM Power Virtual Server environment and customer Data Center sites.
 - Provide DR governance with regularly scheduled testing (DR Drills)
 - Active Data Guard in addition to Data Guard, allows for the database to be open for read-only access, while being kept in sync with the primary database. When using Data Guard for read-only option, the sync process needs to be paused. (Active data guard is an additional DB Option and additional License cost. [https://www.oracle.com/assets/technology-price-list-070617.pdf](https://www.oracle.com/assets/technology-price-list-070617.pdf))
+- Asynchronous Replication: Use Data Guard with asynchronous replication to the DR site to minimize the impact on performance of production Databases.
+- Network: Ensure a direct link is setup between the IBM Power Virtual Server environment and customer Data Center sites.
+- Asynchronous Replication: Use Data Guard with asynchronous replication to the DR site to minimize the impact on performance of production Databases.
+- Network: Ensure a direct link is setup between the IBM Power Virtual Server environment and customer Data Center sites.
+- Asynchronous Replication: Use Data Guard with asynchronous replication to the DR site to minimize the impact on performance of production Databases.
+- Network: Ensure a direct link is setup between the IBM Power Virtual Server environment and customer Data Center sites.
+- Asynchronous Replication: Use Data Guard with asynchronous replication to the DR site to minimize the impact on performance of production Databases.
+- Network: Ensure a direct link is setup between the IBM Power Virtual Server environment and customer Data Center sites.
+- Asynchronous Replication: Use Data Guard with asynchronous replication to the DR site to minimize the impact on performance of production Databases.
+- Network: Ensure a direct link is setup between the IBM Power Virtual Server environment and customer Data Center sites.
