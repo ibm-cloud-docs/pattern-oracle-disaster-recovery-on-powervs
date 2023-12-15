@@ -1,9 +1,4 @@
 ---
-
-
----
-
----
 copyright:
   years: 2023
 lastupdated: "2023-11-28"
@@ -13,6 +8,7 @@ subcollection: <repo-name>
 keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
+
 
 <!--
 Don't include "reference architecture" in the following title.

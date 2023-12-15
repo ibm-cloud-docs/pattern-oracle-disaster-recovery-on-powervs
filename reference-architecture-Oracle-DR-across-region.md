@@ -1,9 +1,4 @@
 ---
-
-
----
-
----
 copyright:
   years: 2023
 lastupdated: "2023-11-28"
@@ -13,13 +8,6 @@ subcollection: <repo-name>
 keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
-
-<!--
-Don't include "reference architecture" in the following title.
-Specify a title based on a use case. If the architecture has a module
-or tile in the IBM Cloud catalog, match the title to the catalog. See
-https://test.cloud.ibm.com/docs/solution-as-code?topic=solution-as-code-naming-guidance.
--->
 
 # Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region
 
