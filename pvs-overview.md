@@ -31,22 +31,3 @@ The main objective of this document is to highlight and illustrate options for O
 - Illustrate reference implementation of Oracle Data Guard on Power Virtual Server environment across IBM regions.
 
   This document is not an implementation document, but a pattern which provides guidance for Power VS architecture to be deployed across Power Virtual server environment(s) and on premises Oracle DR requirement(s).
-
-This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers two resiliency patterns:
-
-Disaster recovery patterns
-
-1. Cross-Region Resiliency (IBM cloud only scenario)
-   1. Disaster recovery of Oracle Database using Oracle Data Guard
-2. IBM Power Virtual Server environment and Customer Data center (hybrid cloud scenario)
-   1. Disaster recovery of Oracle Database using Oracle Data Guard
-
-Following the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro), the Resiliency Patterns cover design considerations for the following aspects and domains:
-
-- **Resiliency:** Backup and Restore, High Availability, Disaster Recovery
-- **Service Management (Observability):** Monitoring, Logging, Auditing
-- **Security:** Data Security, Application Security, Infrastructure and Endpoint Security
-- **Networking:** Segmentation and Isolation, Cloud Native Connectivity, Load Balancing
-- **Compute:** Virtual Servers
-- **Storage:** Primary Storage, Backup Storage
-- **Data:** Data Storage

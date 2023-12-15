@@ -126,6 +126,12 @@ Please ensure you have a proper networking architecture and connection establish
 {: #design-scope}
 
 
+This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers resiliency patterns:
+
+Cross-Region Disaster recovery of Oracle Database using Oracle Data Guard
+
+Following the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro), the Resiliency Patterns cover design considerations for the following aspects and domains:
+
 The  Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers [design considerations](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) and [architecture decisions](/docs/pattern-vpc-vsi-multizone-resiliency?topic=pattern-vpc-vsi-multizone-resiliency-compute-design) for the following aspects and domains (as defined in the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)\*):
 
 - **Compute:** Virtual Servers
