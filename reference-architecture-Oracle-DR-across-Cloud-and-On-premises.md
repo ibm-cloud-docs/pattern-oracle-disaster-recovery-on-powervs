@@ -1,5 +1,9 @@
 ---
 
+
+---
+
+---
 copyright:
   years: 2023
 lastupdated: "2023-11-28"
@@ -7,36 +11,7 @@ lastupdated: "2023-11-28"
 subcollection: <repo-name>
 
 keywords:
-
-# The release that the reference architecture describes
-version: 1.0
-
-# Use if the reference architecture has deployable code.
-# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
-deployment-url: url
-
-# use-case from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/topics/topics_flat_list.csv
-use-case:
-
-# industry from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/industries/industries_flat_list.csv
-industry:
-
-# compliance from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/compliance_entities/compliance_entities_flat_list.csv
-compliance:
-
-content-type: reference-architecture
-
 ---
-
-{{site.data.keyword.attribute-definition-list}}
-
-<!--
-The following line inserts all the attribute definitions. Don't delete.
--->
 {{site.data.keyword.attribute-definition-list}}
 
 <!--
@@ -46,8 +21,8 @@ or tile in the IBM Cloud catalog, match the title to the catalog. See
 https://test.cloud.ibm.com/docs/solution-as-code?topic=solution-as-code-naming-guidance.
 -->
 
-
 # Reference Architecture 2: Oracle Database Disaster Recovery between Customer DC and IBM PowerVS
+
 {: #title-id}
 {: toc-content-type="reference-architecture"}
 {: toc-industry="value"}
@@ -62,7 +37,6 @@ the toc attributes on the H1, repeating the values from the YAML header.
 :information_source: **Tip:** For more information about this template, see [Creating reference architectures](https://test.cloud.ibm.com/docs/writing?topic=writing-reference-architectures).
 
 -->
-
 
 ## Architecture diagram
 
