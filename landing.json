@@ -6,32 +6,12 @@
     {
       "title": "Oracle Database Disaster Recovery between Customer DC and IBM PowerVS",
       "href": "/docs/acme-test?topic=reference-architecture-Oracle-DR-across-Cloud-and-On-premises",
-      "deployable": true
+      "deployable": false
     },
     {
       "title": "Oracle Database Disaster Recovery on IBM PowerVS Cross Region",
       "href": "/docs/acme-test?topic=reference-architecture-Oracle-DR-across-region",
-      "deployable": true
-    }
-  ],
-  "section_diagram": {
-    "description": "This is an overall diagram.",
-    "diagram": "/images/architecture-overview.svg",
-    "caption": "A something something that does something."
-  },
-  "section_video": {
-    "description": "Learn all about this architecture.",
-    "href": "1.%09%20https:/mediacenter.ibm.com/media/IBM+VM+Recovery+Manager+–+A+Short+Story/1_oupg7yzr",
-    "script": "/docs/acme-test?topic=acme-test-video-script"
-  },
-  "section_training": [
-    {
-      "title": "Title of training course",
-      "href": "https://developer.ibm.com/solutions/security/courses/"
-    },
-    {
-      "title": "Title of training course",
-      "href": "https://developer.ibm.com/solutions/security/courses/"
+      "deployable": false
     }
   ]
-}
+ }

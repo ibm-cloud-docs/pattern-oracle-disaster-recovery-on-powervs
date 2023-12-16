@@ -1,3 +1,5 @@
+
+
 ---
 copyright:
   years: 2023
@@ -44,8 +46,24 @@ or tile in the IBM Cloud catalog, match the title to the catalog. See
 https://test.cloud.ibm.com/docs/solution-as-code?topic=solution-as-code-naming-guidance.
 -->
 
-|  |  |  |
-| - | - | - |
+# Title
+
+{: #title-id}
+{: toc-content-type="reference-architecture"}
+{: toc-industry="value"}
+{: toc-use-case="value"}
+{: toc-compliance="value"}
+{: toc-version="value"}
+
+<!--
+The IDs, such as {: #title-id} are required for publishing this reference architecture in IBM Cloud Docs. Set unique IDs for each heading. Also include
+the toc attributes on the H1, repeating the values from the YAML header.
+
+:information_source: **Tip:** For more information about this template, see [Creating reference architectures](https://test.cloud.ibm.com/docs/writing?topic=writing-reference-architectures).
+
+-->
+
+Include a short description, summary, or overview in a single paragraph that describes/summarizes the architecture.
 
 
 # Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region
