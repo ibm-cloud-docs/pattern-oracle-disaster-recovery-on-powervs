@@ -1,3 +1,5 @@
+
+
 ---
 copyright:
   years: 2023
@@ -6,11 +8,80 @@ lastupdated: "2023-11-28"
 subcollection: <repo-name>
 
 keywords:
+
+# The release that the reference architecture describes
+version: 1.0
+
+# Use if the reference architecture has deployable code.
+# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
+# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
+deployment-url: url
+
+# use-case from 'code' column in
+# https://github.ibm.com/digital/taxonomy/blob/main/topics/topics_flat_list.csv
+use-case:
+
+# industry from 'code' column in
+# https://github.ibm.com/digital/taxonomy/blob/main/industries/industries_flat_list.csv
+industry:
+
+# compliance from 'code' column in
+# https://github.ibm.com/digital/taxonomy/blob/main/compliance_entities/compliance_entities_flat_list.csv
+compliance:
+
+content-type: reference-architecture
 ---
 {{site.data.keyword.attribute-definition-list}}
 
+<!--
+The following line inserts all the attribute definitions. Don't delete.
+-->
+
+{{site.data.keyword.attribute-definition-list}}
+
+<!--
+Don't include "reference architecture" in the following title.
+Specify a title based on a use case. If the architecture has a module
+or tile in the IBM Cloud catalog, match the title to the catalog. See
+https://test.cloud.ibm.com/docs/solution-as-code?topic=solution-as-code-naming-guidance.
+-->
+
+# Title
+
+{: #title-id}
+{: toc-content-type="reference-architecture"}
+{: toc-industry="value"}
+{: toc-use-case="value"}
+{: toc-compliance="value"}
+{: toc-version="value"}
+
+<!--
+The IDs, such as {: #title-id} are required for publishing this reference architecture in IBM Cloud Docs. Set unique IDs for each heading. Also include
+the toc attributes on the H1, repeating the values from the YAML header.
+
+:information_source: **Tip:** For more information about this template, see [Creating reference architectures](https://test.cloud.ibm.com/docs/writing?topic=writing-reference-architectures).
+
+-->
+
+Include a short description, summary, or overview in a single paragraph that describes/summarizes the architecture.
+
+
 # Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region
 
+{: #title-id}
+{: toc-content-type="reference-architecture"}
+{: toc-industry="value"}
+{: toc-use-case="value"}
+{: toc-compliance="value"}
+{: toc-version="value"}
+
+<!--
+The IDs, such as {: #title-id} are required for publishing this reference architecture in IBM Cloud Docs. Set unique IDs for each heading. Also include
+the toc attributes on the H1, repeating the values from the YAML header.
+
+:information_source: **Tip:** For more information about this template, see [Creating reference architectures](https://test.cloud.ibm.com/docs/writing?topic=writing-reference-architectures).
+
+-->
 
 ## Architecture Diagram
 
@@ -103,7 +174,7 @@ Cross-Region Disaster recovery of Oracle Database using Oracle Data Guard
 
 Following the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro), the Resiliency Patterns cover design considerations for the following aspects and domains:
 
-The Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers design considerations and architecture decisions for the following aspects and domains (as defined in the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)\*):
+The Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers [design considerations](file:////docs/pattern-vpc-vsi-multizone-resiliency%3ftopic=pattern-vpc-vsi-multizone-resiliency-compute-design) and [architecture decisions](file:////docs/pattern-vpc-vsi-multizone-resiliency%3ftopic=pattern-vpc-vsi-multizone-resiliency-compute-design) for the following aspects and domains (as defined in the [Architecture Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)\*):
 
 - **Compute:** Virtual Servers
 - **Storage:** Primary Storage, Backup Storage
