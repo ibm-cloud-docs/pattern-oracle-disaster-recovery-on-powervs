@@ -32,7 +32,7 @@ The main objective of this document is to highlight and illustrate options for O
 
   This document is not an implementation document, but a pattern which provides guidance for Power VS architecture to be deployed across Power Virtual server environment(s) and on premises Oracle DR requirement(s).
 
-  There are two reference architecture for Oracle Database Disaster recovery patterns using Oracle Data Guard.
+Here we dicuss two reference architecture for Oracle Database Disaster recovery using Oracle Data Guard.
 
-1. Cross-Region Resiliency (across IBM Power Virtual Servers locations)
-2. IBM Power Virtual Server environment and Customer Data centre (hybrid cloud scenario)
+1. Oracle diasater recovery across IBM Cross-Region (across IBM Power Virtual Servers locations)
+2. Oracle disaster recovery across IBM Power Virtual Server environment and Customer Data centre (hybrid cloud scenario)
