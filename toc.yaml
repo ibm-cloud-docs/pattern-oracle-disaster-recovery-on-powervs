@@ -6,7 +6,7 @@ toc:
   properties:
     subcollection: pattern-oracle-disaster-recovery-on-powervs
    # industry: industry-value
-   # use-case: use-case-value
+    use-case: Public cloud
    # compliance: compliance-value
     audience: solution
     content-type: deployment
@@ -20,10 +20,14 @@ toc:
       id: overview
       topics:
       - pvs-overview.md
-    #  - pvs-requirements.md
-    #  - pvs-solution-component.md
-    #  - oracle-dataguard-design.md
 
+  - navgroup:
+      id: architecture
+      topics:
+     # - reference-architecture-1.md
+      - reference-architecture-Oracle-DR-across-region.md
+      - reference-architecture-Oracle-DR-across-Cloud-and-On-premises.md
+      
  
   - navgroup:
       id: plan
@@ -69,15 +73,16 @@ toc:
       - topic-8.md
 
   - navgroup:
+      id: migrate
+      topics:
+      - migration-consideration.md
+
+  - navgroup:
       id: reference
       topics:
       - references-powervs.md
       #- reference-architecture.md
       
-  - navgroup:
-      id: migrate
-      topics:
-      - migration-consideration.md
      
 
   - navgroup:
@@ -85,10 +90,5 @@ toc:
       topics:
       - topic: topic-10.md
 
-  - navgroup:
-      id: architecture
-      topics:
-      - reference-architecture-Oracle-DR-across-region.md
-      - reference-architecture-Oracle-DR-across-Cloud-and-On-premises.md
-     #  - reference-architecture-1.md
+  
       
