@@ -106,7 +106,7 @@ Best practices are to have a non-Production environment similar to a production 
 ### Network architecture guidance
 {: #network-guidance}
 
-![Figure IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.drawio.svg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
+![Figure IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.drawio.jpg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
 
 This figure shows required network components from customer Data center to IBM Power Systems Virtual Server.
 
