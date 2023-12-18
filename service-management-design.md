@@ -30,6 +30,6 @@ Implement incident detection, notification, escalation, discovery, and declarati
 * Use** **[IBM Cloud Event Notifications](https://cloud.ibm.com/docs/event-notifications?topic=event-notifications-en-about) to route events associated with IBM Cloud resources (event sources) to a destination (delivery target for a notification) to trigger actions and help automate the response to critical incidents. Define and build event notifications by linking event sources and destinations. As an example, select event sources to detect cloud provider level (for example, region, zone, services), network level (for example load balancers, global load balancers), security level, and application level critical events and integrate them with destination targets. Select destinations such as ServiceNow to collect all events and assign owners and AIOps tool to automate response to events like the file system is full.
 
 Reference link for Power Virtual server
-https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-monitor-sysdig
 
-https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-at-events
+* https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-monitor-sysdig
+* https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-at-events
