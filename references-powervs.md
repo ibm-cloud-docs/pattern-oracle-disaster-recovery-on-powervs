@@ -20,5 +20,5 @@ Here are Reference on IBM Power Virtual Server and Oracle Data guard
 8. [IBM Power Systems Community](https://community.ibm.com/community/user/power/home)
 9. [IBM Redbook – Oracle on Power Systems](https://www.redbooks.ibm.com/redbooks/pdfs/sg248485.pdf)
 10. [IBM VMRM :](https://www.ibm.com/docs/en/vmrmdr/1.7?topic=overview)
-11. [VMRM Blog](1.%09https:/w3.ibm.com/w3publisher/ibm-vm-recovery-manager-internal-wiki)
-12. [Video](1.%09%20https:/mediacenter.ibm.com/media/IBM+VM+Recovery+Manager+–+A+Short+Story/1_oupg7yzr)
+11. [VMRM Blog](https:/w3.ibm.com/w3publisher/ibm-vm-recovery-manager-internal-wiki)
+12. [Video](https:/mediacenter.ibm.com/media/IBM+VM+Recovery+Manager+–+A+Short+Story/1_oupg7yzr)
