@@ -18,7 +18,7 @@ The reference architecture covers solution overview and details on how to design
 
 The figure below describes an architecture approach for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
-![A screenshot of a computer Description automatically generated](image/e4b139fb7a5331e50a4c5af3cd920b36.jpg)
+![A screenshot of a computer Description automatically generated](image/pvs-on-ibm-pvs-across-ibm.drawio.svg)
 
 Figure Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions
 
@@ -54,7 +54,7 @@ The figure below illustrates the reference architecture based on Oracle Data Gua
 - Oracle DB Enterprise Edition which includes Data Guard, is used to provide real-time replications across the two separate Oracle Database in each region over a Global Transit Gateway
 - Primary is Frankfurt and Secondary is Madrid region
 
-![A screenshot of a computer Description automatically generated](image/3f699a0b8bdb16bf395c7c11b98f3636.png)
+![A screenshot of a computer Description automatically generated](image/pvs-on-ibm-Oracle-dataguard-across-ibm.drawio.svg)
 
 Figure Oracle Disaster Recovery across different IBM PowerVS region using Oracle Data Guard
 
@@ -79,7 +79,7 @@ Note: Best practices is to have non Production environment similar to production
 
 **Network Architecture Guidance**
 
-![A diagram of a server Description automatically generated](image/37a404a1fbce991ea5793bc8ac74fd0f.jpg)
+![A diagram of a server Description automatically generated](image/pvs-on-ibm-networking-ibm-pvs.drawio.svg)
 
 Figure IBM Power Virtual server Environment networking tolopogy
 
@@ -112,7 +112,7 @@ The Oracle disaster recovery on IBM Power Virtual Systems Server architecture co
 - **Resiliency:** High Availability, Backup and Restore,
 - **Service Management:** Monitoring, Logging, Auditing, Alerting
 
-![](image/a962b2361fc0c444992539d21ce7577e.png)
+![](image/pvs-on-ibm-heat-map.drawio.svg)
 
 Figure 1 Oracle resiliency architecture design scope
 

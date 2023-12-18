@@ -22,7 +22,7 @@ We assume that the primary workload is hosted on IBM Power Systems Virtual Serve
 
 The below figure shows high level deployment architecture with Oracle Data Guard and without Oracle Data Guard. It considers IBM PowerVS hosting as the primary site and the customer Data Center as the secondary site (DR). IBM VPC hosts common shared services such as IAM, DNS, Monitoring, management tools, and x86 workloads.
 
-![A screenshot of a computer Description automatically generated](image/c0f9655ee218bc34f83daffa3ad1119b.jpg)
+![A screenshot of a computer Description automatically generated](image/pvsibm-onprem-Architecture-overview-Oracle-Data-Guard-IBM-and-on-prem.drawio.svg)
 
 Figure IBM Power Virtual Server environment and On-premises overview diagram featuring VPC and PowerVS workspace.
 
@@ -40,7 +40,7 @@ Figure IBM Power Virtual Server environment and On-premises overview diagram fea
 
 The Oracle Disaster recovery solution approach across IBM PowerVS and customer Data center are described below. This approach uses Oracle Data Guard to achieve Disaster recovery of Oracle DB across IBM Power Virtual Server and the customer Data Center.
 
-![A screenshot of a computer Description automatically generated](image/29fa5f2bef8ca6bf18ace35ca04609a9.png)
+![A screenshot of a computer Description automatically generated](image/pvsibm-onprem-Oracle-across-IBM&on-Premises.drawio.svg)
 
 Figure Oracle Disaster Recovery across Power Virtual Server environment and on-premises using Oracle DG replication methods.
 
@@ -122,7 +122,7 @@ The Oracle disaster recovery on IBM Power Virtual Systems Server architecture co
 - **Resiliency:** High Availability, Backup and Restore,
 - **Service Management:** Monitoring, Logging, Auditing, Alerting
 
-![](image/a962b2361fc0c444992539d21ce7577e.png)
+![](image/pvs-on-ibm-heat-map.drawio.svg)
 
 Figure 1 Oracle Data Guard architecture design scope
 
