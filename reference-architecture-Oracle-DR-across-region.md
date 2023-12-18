@@ -1,15 +1,40 @@
 ---
+
 copyright:
   years: 2023
-lastupdated: "2023-11-28"
+lastupdated: "2023-12-15"
 
-subcollection: <repo-name>
+keywords: # Not typically populated
 
-keywords:
+subcollection: pattern-oracle-disaster-recovery-on-powervs
+authors:
+  - name: Dwarkanath P Rao
+    url: https://www.linkedin.com/in/dwarakanath/
+
+# The release that the reference architecture describes
+version: 1.0
+
+# Use if the reference architecture has deployable code.
+# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
+# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
+deployment-url:
+
+docs: https://cloud.ibm.com/docs/pattern-oracle-disaster-recovery-on-powervs
+# use-case from 'code' column in
+# https://github.ibm.com/digital/taxonomy/blob/main/topics/topics_flat_list.csv
+use-case: cloud
+
+content-type: reference-architecture
+
 ---
+
 {{site.data.keyword.attribute-definition-list}}
 
 # Reference Architecture 1: Oracle Database Disaster Recovery on IBM PowerVS Cross Region
+{: #Oracle-dr-ibm-pvs}
+{: toc-content-type="reference-architecture"}
+{: toc-use-case="cloud"}
+{: toc-version="1.0"}
 
 
 ## Architecture Diagram
