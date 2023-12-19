@@ -12,7 +12,7 @@ toc:
     content-type: deployment
     href: /docs/pattern-oracle-disaster-recovery-on-powervs
     path: pattern-oracle-disaster-recovery-on-powervs
-    description: Solution design for an Oracle Database deployment on IBM Power Virtual Server that meets disaster recovery requirements for enterprise workloads.
+    description: Pattern description
     label: Oracle Disaster Recovery on IBM Power Virtual Servers
 
   entries:
@@ -24,7 +24,8 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - reference-architecture-Oracle-DR-across-region.md
+      #- reference-architecture.md
+      - reference-architecture-Oracle-DR-across-region-1.md
       - reference-architecture-Oracle-DR-across-Cloud-and-On-premises.md
       
  
@@ -80,7 +81,7 @@ toc:
       id: reference
       topics:
       - references-powervs.md
-     
+      #- reference-architecture.md
       
      
 
