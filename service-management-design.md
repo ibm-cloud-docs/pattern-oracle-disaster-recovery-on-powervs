@@ -6,12 +6,11 @@ lastupdated: "2023-12-18"
 subcollection: pattern-oracle-disaster-recovery-on-powervs
 
 keywords:
-
 ---
-
 {{site.data.keyword.attribute-definition-list}}
 
 # Service management design
+
 {: #design-service-management}
 
 Typically, service management tools are integrated with a centralized Service Management Ticketing System to provide a single pane of glass for all operations activities.
@@ -34,7 +33,7 @@ Implement incident detection, notification, escalation, discovery, and declarati
 * Configure IBM Cloud Monitoring, IBM Logging, and Activity Tracker to set up alerts, send notifications, and trigger actions in response to the alerts.
 * Use [IBM Cloud Event Notifications](/docs/event-notifications?topic=event-notifications-en-about) to route events associated with IBM Cloud resources (event sources) to a destination (delivery target for a notification) to trigger actions and help automate the response to critical incidents. Define and build event notifications by linking event sources and destinations. As an example, select event sources to detect cloud provider level (for example, region, zone, services), network level (for example load balancers, global load balancers), security level, and application level critical events and integrate them with destination targets. Select destinations such as ServiceNow to collect all events and assign owners and AIOps tool to automate response to events like the file system is full.
 
-Reference link for Power Virtual server
+Reference for service management for IBM Power Virtual server
 
 * https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-monitor-sysdig
 * https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-at-events
