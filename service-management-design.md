@@ -1,17 +1,21 @@
 ---
 copyright:
   years: 2023
-lastupdated: "2023-11-28"
+lastupdated: "2023-12-18"
 
-subcollection: <repo-name>
+subcollection: pattern-oracle-disaster-recovery-on-powervs
 
 keywords:
 ---
-# Service Management Considerations
+{{site.data.keyword.attribute-definition-list}}
 
-Typically, Service management tools are integrated with a centralized Service Management Ticketing System to provide a single pane of glass for all operations activities.
+# Service management design
 
-The list of tools are based on clients needs and requirement and what level of management one wish to perform. There are general guidelines and some recommendations in the Service management Architecture decision section.
+{: #design-service-management}
+
+Typically, service management tools are integrated with a centralized Service Management Ticketing System to provide a single pane of glass for all operations activities.
+
+The list of tools are based on clients needs and requirements and what level of management one wants to perform. There are general guidelines and some recommendations in the Service management Architecture decision section.
 
 Operations management is a key aspect of building resilient applications. To support the application availability targets:
 
@@ -24,12 +28,12 @@ Equally important is to track and monitor all activity that is performed on the 
 
 Implement incident detection, notification, escalation, discovery, and declaration to provide realistic, achievable objectives that add business value.
 
-* Use** **[IBM Cloud Monitoring](https://cloud.ibm.com/docs/monitoring?topic=monitoring-about-monitor) and** **[IBM Log Analysis](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started) to monitor operational metrics and logs. Operational metrics include CPU and memory usage, API response times, and so on.
-* Use** **[IBM Cloud Activity Tracker](https://cloud.ibm.com/docs/activity-tracker?topic=activity-tracker-getting-started) to monitor audit logs for the application, IBM Cloud Infrastructure, and other IBM Cloud services.
+* Use [IBM Cloud Monitoring](/docs/monitoring?topic=monitoring-about-monitor) and[IBM Log Analysis](/docs/log-analysis?topic=log-analysis-getting-started) to monitor operational metrics and logs. Operational metrics include CPU and memory usage, API response times, and so on.
+* Use [IBM Cloud Activity Tracker](/docs/activity-tracker?topic=activity-tracker-getting-started) to monitor audit logs for the application, IBM Cloud Infrastructure, and other IBM Cloud services.
 * Configure IBM Cloud Monitoring, IBM Logging, and Activity Tracker to set up alerts, send notifications, and trigger actions in response to the alerts.
-* Use** **[IBM Cloud Event Notifications](https://cloud.ibm.com/docs/event-notifications?topic=event-notifications-en-about) to route events associated with IBM Cloud resources (event sources) to a destination (delivery target for a notification) to trigger actions and help automate the response to critical incidents. Define and build event notifications by linking event sources and destinations. As an example, select event sources to detect cloud provider level (for example, region, zone, services), network level (for example load balancers, global load balancers), security level, and application level critical events and integrate them with destination targets. Select destinations such as ServiceNow to collect all events and assign owners and AIOps tool to automate response to events like the file system is full.
+* Use [IBM Cloud Event Notifications](/docs/event-notifications?topic=event-notifications-en-about) to route events associated with IBM Cloud resources (event sources) to a destination (delivery target for a notification) to trigger actions and help automate the response to critical incidents. Define and build event notifications by linking event sources and destinations. As an example, select event sources to detect cloud provider level (for example, region, zone, services), network level (for example load balancers, global load balancers), security level, and application level critical events and integrate them with destination targets. Select destinations such as ServiceNow to collect all events and assign owners and AIOps tool to automate response to events like the file system is full.
 
-Reference link for Power Virtual server
+Reference for service management for IBM Power Virtual server
 
 * https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-monitor-sysdig
 * https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-at-events

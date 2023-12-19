@@ -1,11 +1,11 @@
 {
   "title": "Oracle Data Guard on IBM Power Virtual Systems Server",
-  "lastupdated": "2023-04-06",
-  "introduction": "This is a refeerence solution architecture to host Oracle Data Guard on IBM Power Virtual System Server environment.",
+  "lastupdated": "2023-12-18",
+  "introduction": "This is a reference solution architecture to host Oracle Data Guard on IBM Power Virtual System Server environment.",
   "section_architectures": [
     {
       "title": "Oracle Database Disaster Recovery between Customer DC and IBM PowerVS",
-      "href": "docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-reference-architecture-1-oracle-database-disaster-recovery-on-ibm-powervs-cross-region"
+      "href": "docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-reference-architecture-1-oracle-database-disaster-recovery-on-ibm-powervs-cross-region",
       "deployable": false
     },
     {
