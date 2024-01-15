@@ -1,5 +1,5 @@
 {
-  "title": "Oracle Data Guard on IBM Power Virtual Systems Server",
+  "title": "Oracle  Disaster Recovery on IBM Power Virtual Systems Server",
   "lastupdated": "2023-12-18",
   "introduction": "This is a reference solution architecture to host Oracle Data Guard on IBM Power Virtual System Server environment.",
   "section_architectures": [
