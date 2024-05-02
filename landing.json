@@ -5,12 +5,12 @@
   "section_architectures": [
     {
       "title": "Oracle Database Disaster Recovery between Customer DC and IBM PowerVS",
-      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-Oracle-dr-ibm-clientdc-pvs",
+      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-oracle-database-disaster-recovery-between-customer-dc-and-ibm-powervs",
       "deployable": false
     },
     {
       "title": "Oracle Database Disaster Recovery on IBM PowerVS Cross Region",
-      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-Oracle-dr-ibm-pvs", 
+      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-oracle-database-disaster-recovery-on-ibm-powervs-cross-region", 
       "deployable": false
     }
   ]
