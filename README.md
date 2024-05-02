@@ -2,11 +2,11 @@
 
 Documentation repository for pattern-oracle-disaster-recovery-on-powervs
 
-Power Virtual Server is a common solution
+**Power Virtual Server is a common solution**
 component for both of the Oracle disaster recovery patterns.  This section provides the PowerVS solution
 architecture that will be used for the Oracle disaster recovery patterns.
 
-PowerVS is a fully contained, co-located,
+**PowerVS is a fully contained, co-located,**
 standalone offering and has its own management control plane, network, and
 direct attached storage.   It provides a
 simple and easy interface for creating storage and network resources required
