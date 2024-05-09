@@ -10,7 +10,6 @@ keywords:
 # Architecture decisions for compute
 
 {: #architecture-compute}
-
 The following are the compute architecture decisions that are considered to host Power Virtual server LPARS.
 
 Power Virtual Servers are available with flexible hardware configurations on both Power S922 and E980. You can define a custom size of the IBM Power Virtual Server to use for Oracle Database instance.
