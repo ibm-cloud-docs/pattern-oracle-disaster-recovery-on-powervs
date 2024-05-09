@@ -1,4 +1,3 @@
-
 ---
 copyright:
   years: 2024
@@ -11,7 +10,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Power Virtual Server Deployment
-
 
 ## **Deployment Overview:**
 
@@ -34,7 +32,8 @@ This option involves deploying the "Power Virtual Server with VPC landing zone" 
 * **DR Networking Configuration** : Implement customized solutions for disaster recovery networking, which includes configuring VPC routing rules, setting up appropriate firewall rules, and any other network configurations required to support your DR strategy.
 * **DNS and Networking Customization** : Adjust DNS settings and further configure the networking aspects of the environment based on customer inputs. This will likely involve making specific assumptions and decisions to align with the unique requirements of the customer's infrastructure.
 
-## **Out-of-Scope for Initial Deployment (To be Addressed Separately):**
+## **Oracle Deployment and customisation:**
+
 The initial deployment will not encompass:
 
 * **Oracle Deployment** : The setup and configuration of Oracle environments, including any necessary databases, applications, or middleware components.
