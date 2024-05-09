@@ -67,7 +67,7 @@ toc:
   - navgroup:
       id: deploy
       topics:
-      - topic-7.md
+      - deploy.md
       - topic-8.md
 
   - navgroup:
