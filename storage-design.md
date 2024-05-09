@@ -6,9 +6,7 @@ lastupdated: "2023-12-18"
 subcollection: pattern-oracle-disaster-recovery-on-powervs
 
 keywords:
-
 ---
-
 {{site.data.keyword.attribute-definition-list}}
 
 # Storage design decisions
@@ -26,5 +24,3 @@ For production databases the recommendation, for performance reasons, is always 
 {: #shared-storage}
 
 PowerVS provides a shared storage capability that is required for implementing Oracle Data Guard. Use shared storage and Oracle DG to ensure data consistency across nodes in DG.
-
-
