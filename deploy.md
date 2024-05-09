@@ -18,9 +18,10 @@ This option involves deploying the "Power Virtual Server with VPC landing zone" 
 **Deployment Steps and Customization:**
 
 1. **Initial Deployment:**
-   * Deploy the "Power Virtual Server with VPC landing zone" DA twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](https://cloud.ibm.com/docs/deployable-reference-architectures?topic=deployable-reference-architectures-deploy-arch-ibm-pvs-inf-full-stack).
 
+   * Deploy the "Power Virtual Server with VPC landing zone" DA twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](https://cloud.ibm.com/docs/deployable-reference-architectures?topic=deployable-reference-architectures-deploy-arch-ibm-pvs-inf-full-stack).
 2. **Manual Initial Customization:**
+
    * In Region B, after ensuring that no active connections depend on it, remove the existing transit gateway (you will need to remove the VPC and PowerVS connections first) to streamline network management and resource optimization.
    * In region A, designate the remaining transit gateway as global, enhancing its role in facilitating inter-region connectivity for your Power Virtual Server workspaces and VPCs.
    * Optionally, in both Regions (A & B), add additional VPCs/subnets/ACLs/security groups to expand your network infrastructure and cater to your specific needs.
@@ -33,7 +34,7 @@ This option involves deploying the "Power Virtual Server with VPC landing zone" 
 * **DR Networking Configuration** : Implement customized solutions for disaster recovery networking, which includes configuring VPC routing rules, setting up appropriate firewall rules, and any other network configurations required to support your DR strategy.
 * **DNS and Networking Customization** : Adjust DNS settings and further configure the networking aspects of the environment based on customer inputs. This will likely involve making specific assumptions and decisions to align with the unique requirements of the customer's infrastructure.
 
-## **Oracle Deployment and customisation:**
+## **Oracle Deployment and customization:**
 
 The initial landing zone deployment described above does not encompass:
 

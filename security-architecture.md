@@ -13,7 +13,7 @@ keywords:
 
 # Architecture decisions for security
 
-{: \#architeccture-security}
+{: #architeccture-security}
 
 The following sections summarize the security architecture decisions for resilient solutions.
 
