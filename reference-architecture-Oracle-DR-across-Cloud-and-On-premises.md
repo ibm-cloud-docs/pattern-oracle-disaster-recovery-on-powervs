@@ -97,8 +97,8 @@ Carefully consider options for synchronous and asynchronous replication when you
 {: note}
 
 ### Software components used for the Oracle Data Guard deployment
-
 {: #software-components}
+
 Table showing the components used for Oracle replication
 
 | Software component                                               | Target system component | Description                                         |
