@@ -8,6 +8,7 @@ subcollection: pattern-oracle-disaster-recovery-on-powervs
 keywords:
 
 ---
+{{site.data.keyword.attribute-definition-list}}
 # Compute design decisions
 {: #compute-design}
 

@@ -8,10 +8,10 @@ subcollection: pattern-oracle-disaster-recovery-on-powervs
 keywords:
 
 ---
-
+{{site.data.keyword.attribute-definition-list}}
 # Architecture decisions for networking
 
-{: \#architecture-networking}
+{: #architecture-networking}
 
 The following are the key architecture decisions for networking for Power Virtual Server.
 
