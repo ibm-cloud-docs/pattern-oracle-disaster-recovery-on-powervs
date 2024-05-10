@@ -105,7 +105,7 @@ Table showing the components used for Oracle replication
 | Software component                                               | Target system component | Description                                         |
 | ---------------------------------------------------------------- | ----------------------- | --------------------------------------------------- |
 | DB replication Data Guard                                        | Installed on LPAR       | Used for Oracle DB replication across another site. |
-| {: caption="Table 1. Software components" caption-side="bottom"} |                         |                                                     |
+|{: caption="Table 1. Software components" caption-side="bottom"} |                         |                                                     |
 
 Active Data Guard enables you to read while the data is syncing. There is no need to pause they sync process.
 {: note}
