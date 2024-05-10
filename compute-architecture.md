@@ -7,8 +7,9 @@ subcollection: pattern-oracle-disaster-recovery-on-powervs
 
 keywords:
 ---
-# Architecture decisions for compute
+{{site.data.keyword.attribute-definition-list}}
 
+# Architecture decisions for compute
 {: #architecture-compute}
 
 
