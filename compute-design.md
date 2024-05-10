@@ -9,6 +9,7 @@ keywords:
 
 ---
 {{site.data.keyword.attribute-definition-list}}
+
 # Compute design decisions
 {: #compute-design}
 

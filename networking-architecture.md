@@ -9,8 +9,8 @@ keywords:
 
 ---
 {{site.data.keyword.attribute-definition-list}}
-# Architecture decisions for networking
 
+# Architecture decisions for networking
 {: #architecture-networking}
 
 The following are the key architecture decisions for networking for Power Virtual Server.

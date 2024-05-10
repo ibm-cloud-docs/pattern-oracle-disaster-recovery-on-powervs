@@ -10,7 +10,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Migration solution approach
-
 {: #migration-approach}
 
 When workloads are deployed on a new system, you must pay attention to its configuration and tuning to achieve the expected performance. Power Virtual Server uses different IBM Power Systems: E980 (9080-M9S), S922 (9009-22A), and S1022 (9105-22A). For more information, see [Hardware specifications](/docs/power-iaas?topic=power-iaas-about-virtual-server#hardware-specifications).
@@ -20,7 +19,6 @@ For AIX, Power Virtual Server supports only AIX 7.1 or later. If you use an unsu
 IBM i customers must use IBM i 7.1 or later. Clients running IBM i 6.1 must first upgrade the operating system (OS) to a current support level before you migrate to the Power Systems Virtual Server. IBM i 7.2 supports direct [upgrades from IBM i 6.1 or 7.1 (N-2)](https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzahc/fastpathrzahc.htm){: external}.
 
 ## Migration checklist
-
 {: #migration-checklist}
 
 Before you migrate to a newer IBM Power System, review the following checklist:
@@ -32,7 +30,6 @@ Before you migrate to a newer IBM Power System, review the following checklist:
 1.  Follow the I/O consideration guide.
 
 ## Migration approach options
-
 {: #migration approach}
 
 | Approach                                                        | Power VS options                                                                                                                                                                             | Solution guidance                                                                                                                                                                                                                                                                                                                                              |
