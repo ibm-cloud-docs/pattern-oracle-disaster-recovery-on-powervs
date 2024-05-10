@@ -12,7 +12,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Architecture decisions for service management
-
 {: #architecture-service-management}
 
 The following sections summarize the architecture decisions for service management for the Oracle Disaster Recovery on IBM Power Virtual Servers pattern.

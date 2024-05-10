@@ -10,7 +10,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Service management design
-
 {: #design-service-management}
 
 Typically, service management tools are integrated with a centralized Service Management Ticketing System to provide a single pane of glass for all operations activities.

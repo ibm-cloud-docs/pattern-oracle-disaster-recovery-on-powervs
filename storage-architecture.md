@@ -8,11 +8,9 @@ subcollection: pattern-oracle-disaster-recovery-on-powervs
 keywords:
 
 ---
-
 {{site.data.keyword.attribute-definition-list}}
 
 # Architecture decisions for storage
-
 {: #architecture-storage}
 
 The following sections summarize the architecture decisions for storage for the Oracle Disaster Recovery on IBM Power Virtual Servers pattern.

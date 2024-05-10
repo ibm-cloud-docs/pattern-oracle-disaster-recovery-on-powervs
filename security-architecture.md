@@ -12,7 +12,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Architecture decisions for security
-
 {: #architeccture-security}
 
 The following sections summarize the security architecture decisions for resilient solutions.
