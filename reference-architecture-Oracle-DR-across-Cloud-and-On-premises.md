@@ -29,12 +29,14 @@ content-type: reference-architecture
 {{site.data.keyword.attribute-definition-list}}
 
 # Oracle Database Disaster Recovery between Customer DC and IBM PowerVS
-
-{: \#Oracle-dr-ibm-clientdc-pvs} {: toc-content-type="reference-architecture"} {: toc-use-case="cloud"} {: toc-version="1.0"}
+{: #Oracle-dr-ibm-clientdc-pvs} 
+{: toc-content-type="reference-architecture"} 
+{: toc-use-case="cloud"} 
+{: toc-version="1.0"}
 
 ## Architecture diagram
 
-{: \#architecture-diagram}
+{: #architecture-diagram}
 
 This reference architecture covers a solution overview and details on how to design an Oracle Disaster recovery architecture on IBM Power Virtual Server environment and customer's existing data center.
 
@@ -42,7 +44,7 @@ We assume that the primary workload is hosted on IBM Power Systems Virtual Serve
 
 ### Architecture overview
 
-{: \#architecture-overview}
+{: #architecture-overview}
 
 The following figure shows high-level deployment architecture with Oracle Data Guard and without Oracle Data Guard. It considers IBM PowerVS hosting as the primary site and the customer Data Center as the secondary site (DR). IBM VPC hosts common shared services such as IAM, DNS, Monitoring, management tools, and x86 workloads.
 
@@ -60,7 +62,7 @@ The following figure shows high-level deployment architecture with Oracle Data G
 
 ### Oracle disaster recovery that uses Oracle Data Guard
 
-{: \#oracle-data-guard}
+{: #oracle-data-guard}
 
 The Oracle Disaster recovery solution approach across IBM PowerVS and customer data center uses Oracle Data Guard to achieve Disaster recovery of Oracle DB across IBM Power Virtual Server and the customer Data Center.
 
@@ -70,7 +72,7 @@ The reference architect to host Oracle Database and x86 workloads on IBM cloud, 
 
 ### Environment that is deployed as a part of this reference architecture
 
-{: \#environment-deployed}
+{: #environment-deployed}
 
 The primary environment workloads that are hosted in IBM include:
 
@@ -97,7 +99,7 @@ Carefully consider options for synchronous and asynchronous replication when you
 
 ### Software components used for the Oracle Data Guard deployment
 
-{: \#software-components}
+{: #software-components}
 
 Table showing the components used for Oracle replication
 
@@ -109,7 +111,7 @@ Active Data Guard enables you to read while the data is syncing. There is no nee
 
 ### Deployment architecture guidance
 
-{: \#deployment-guidance}
+{: #deployment-guidance}
 
 Ensure that you complete the prerequisites for IBM Power Virtual Server environment connectivity. Follow the necessary steps for a secured connection needed for a Power Virtual server environment. The Customer Data center connection to IBM Power virtual servers details are described in the [Cloud Docs](file:////docs/power-iaas%3ftopic=power-iaas-network-architecture-diagrams). For more information, see:
 
@@ -124,7 +126,7 @@ To configure the Power Virtual Server and Oracle Database:
 
 ## Design scope
 
-{: \#design-scope}
+{: #design-scope}
 
 This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers resiliency patterns:
 
@@ -149,7 +151,7 @@ The Architecture Design Framework provides a consistent approach to design cloud
 
 ## Requirements
 
-{: \#requirements}
+{: #requirements}
 
 The following represents a baseline set of requirements that we believe are applicable to most clients and critical to successful Oracle Disaster Recovery deployment. This set of requirements are key considerations for a successful Disaster recovery setup of Power workloads and other co-existing applications in IBM Power Systems Virtual Server environments, IBM Cloud, and customer Data Centers.
 
@@ -157,15 +159,15 @@ The following represents a baseline set of requirements that we believe are appl
 |-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Compute                                                   | Provide properly isolated compute resources with adequate compute capacity for the applications.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Storage                                                   | Provide storage that meets the application and database performance requirements.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Networking                                                | \* Deploy workloads in an isolated environment and enforce information flow policies. \\n \* Provide secure, encrypted connectivity to the cloud’s private network for management purposes. \\n \* Distribute incoming application requests across available compute resources. \\n \* Provide public and private DNS resolution to support the use of hostnames instead of IP addresses.                                                                                                                                                                                                                                                                                                                                    |
-| Security                                                  | \* Ensure that all operator actions are run securely through a bastion host. \\n \* Protect the boundaries of the application against denial-of-service and application-layer attacks. \\n \* Encrypt all application data in transit and at rest to protect it from unauthorized disclosure. \\n \* Encrypt all backup data to protect from unauthorized disclosure. \\n \* Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \\n \* Encrypt all data that uses customer-managed keys to meet regulatory compliance requirements for more security and customer control. \\n \* Protect secrets through their entire lifecycle and secure them using access control measures. |
-| Resiliency                                                | \* Support application availability targets and business continuity policies. \\n \* Provide highly available compute, storage, network, and other cloud services to handle application load and performance requirements. \\n \* Backup application data to enable recovery if unplanned outages occur. \\n \* Provide highly available storage for security data (logs) and backup data.                                                                                                                                                                                                                                                                                                                                   |
-| Service Management                                        | \* Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. \\n \* Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize downtime. \\n \* Monitor audit logs to track changes and detect potential security problems. \\n \* Provide a mechanism to identify and send notifications about issues that are found in audit logs.                                                                                                                                                                                                                                    |
+| Networking                                                | * Deploy workloads in an isolated environment and enforce information flow policies. * Provide secure, encrypted connectivity to the cloud’s private network for management purposes. * Distribute incoming application requests across available compute resources. * Provide public and private DNS resolution to support the use of hostnames instead of IP addresses.                                                                                                                                                                                                                                                                                                                                    |
+| Security                                                  | * Ensure that all operator actions are run securely through a bastion host. * Protect the boundaries of the application against denial-of-service and application-layer attacks. * Encrypt all application data in transit and at rest to protect it from unauthorized disclosure. * Encrypt all backup data to protect from unauthorized disclosure. * Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. * Encrypt all data that uses customer-managed keys to meet regulatory compliance requirements for more security and customer control. * Protect secrets through their entire lifecycle and secure them using access control measures. |
+| Resiliency                                                | * Support application availability targets and business continuity policies. * Provide highly available compute, storage, network, and other cloud services to handle application load and performance requirements. * Backup application data to enable recovery if unplanned outages occur. * Provide highly available storage for security data (logs) and backup data.                                                                                                                                                                                                                                                                                                                                   |
+| Service Management                                        |  Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. * Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize downtime. * Monitor audit logs to track changes and detect potential security problems. * Provide a mechanism to identify and send notifications about issues that are found in audit logs.                                                                                                                                                                                                                                    |
 | {: caption="Table 2. Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 ## Components
 
-{: \#components}
+{: #components}
 
 The common solution components that are listed in the following table are those components that are needed for both scenarios.
 
