@@ -14,6 +14,7 @@ keywords:
 
 ## Deployment Overview:
 {: #deploy-overview}
+
 This option involves deploying the "Power Virtual Server with VPC landing zone" Deployable Architecture (DA) in a multi-regional configuration, specifically in two distinct geographic regions. The deployment will be based on an existing DA template, followed by a series of manual customizations to tailor the setup to the specific requirements of your environment.
 
 Deployment Steps and Customization:
@@ -31,12 +32,14 @@ Deployment Steps and Customization:
 
 ## Additional Manual Networking Customization:
 {: #deploy-networking}
+
 * Firewall Appliance Configuration : Configure firewalls according to customer preferences and security requirements, ensuring that the chosen firewall solution aligns with the intended level of protection and access control policies. Also ensure the proper routing rules are configured in the VPCs (egress and ingress) but also on the customer on premise router to steer traffic to the chosen firewall solution.
 * DR Networking Configuration : Implement customized solutions for disaster recovery networking, which includes configuring VPC routing rules, setting up appropriate firewall rules, and any other network configurations required to support your DR strategy.
 * DNS and Networking Customization : Adjust DNS settings and further configure the networking aspects of the environment based on customer inputs. This will likely involve making specific assumptions and decisions to align with the unique requirements of the customer's infrastructure.
 
 ## Oracle Deployment and customization:
 {: #deploy-oracle}
+
 The initial landing zone deployment described above does not encompass:
 
 * Oracle Deployment : The setup and configuration of Oracle environments, including any necessary databases, applications, or middleware components.
