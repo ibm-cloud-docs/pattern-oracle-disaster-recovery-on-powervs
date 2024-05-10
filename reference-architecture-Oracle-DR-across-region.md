@@ -28,14 +28,12 @@ content-type: reference-architecture
 {{site.data.keyword.attribute-definition-list}}
 
 # Oracle Database Disaster Recovery on IBM PowerVS Cross Region
-
 {: #Oracle-dr-ibm-pvs}
 {: toc-content-type="reference-architecture"}
 {: toc-use-case="cloud"}
 {: toc-version="1.0"}
 
 ## Architecture diagram
-
 {: #architecture-diagram}
 
 The reference architecture covers a solution overview and details on how to design an Oracle Disaster recovery architecture on IBM Power Virtual Server environment.
@@ -47,7 +45,6 @@ The following figure describes an architecture approach for deploying a disaster
 This reference architecture assumes that there are more non-Oracle Database x86 workloads that are hosted in the IBM Cloud VPC environment. Outlined are key components that are required for an Oracle Database deployment on Power Virtual Server and x86 workloads that are deployed on VPC in two regions.
 
 ### Environments deployed in this reference architecture
-
 {: #environments-deployed}
 
 - VPC environment
@@ -68,7 +65,6 @@ This reference architecture assumes that there are more non-Oracle Database x86 
   - Cloud Object Storage configured for backup
 
 ### Oracle Disaster Recovery that uses Oracle Data Guard
-
 {: #oracle-data-guard}
 
 In this section, we look at how to use Oracle Database Enterprise Edition and use Oracle Data Guard feature for disaster recovery. We will set up a database instance in IBM PowerVS primary region and secondary region and configure Data Guard failover for disaster recovery.
@@ -83,7 +79,6 @@ The following figure illustrates the reference architecture based on Oracle Data
 ![Figure Oracle Disaster Recovery across different IBM PowerVS regions that uses Oracle Data Guard](image/pvs-on-ibm-Oracle-dataguard-across-ibm.drawio.svg){: caption="Figure 2. Oracle Disaster Recovery across regions" caption-side="bottom"}
 
 ### Deployment architecture guidance
-
 {: #deployment-guidance}
 
 Here are the key steps for setting up the Oracle database and Data Guard in IBM Power Systems Virtual Server.
@@ -105,7 +100,6 @@ Best practices are to have a non-Production environment similar to a production 
 {: note}
 
 ### Network architecture guidance
-
 {: #network-guidance}
 
 ![Figure IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.drawio.jpg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
@@ -121,7 +115,6 @@ Make sure that you have a proper networking architecture and connection that is 
 5. Establish a GRE tunnel (GREa) between the Gateway Router in VPC (NGFW) and the customer router.
 
 ## Design scope
-
 {: #design-scope}
 
 This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers resiliency patterns:
@@ -144,7 +137,6 @@ The Oracle disaster recovery on IBM Power Virtual Systems Server architecture co
 The Architecture Design Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more information, see [Introduction to the Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro).
 
 ## Requirements
-
 {: #requirements}
 
 The following represents a baseline set of requirements that we believe are applicable to most clients and critical to successful Oracle Disaster Recovery deployment. This set of requirements are key considerations for a successful Disaster recovery setup of Power workloads and other co-existing applications in IBM Power Systems Virtual Server environments, IBM Cloud, and customer Data Centers.
@@ -160,7 +152,6 @@ The following represents a baseline set of requirements that we believe are appl
 | {: caption="Table 1. Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ## Components
-
 {: #components}
 
 The common solution components that are listed in the following table are those components that are needed for both scenarios.
