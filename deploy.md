@@ -9,20 +9,19 @@ keywords:
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Power Virtual Server Deployment
+# Deploying a Power Virtual Server deployable architecture
 {: #powervs-da}
 
-## Deployment Overview:
-{: #deploy-overview}
+This guide outlines deploying a Power Virtual Server with VPC landing zone deployable architecture in a multi-regional configuration, specifically in two distinct regions. The deployment is based on an existing deployable architecture template, as well as a series of manual customizations to tailor the setup to the specific requirements for your environment.
 
-This option involves deploying the "Power Virtual Server with VPC landing zone" Deployable Architecture (DA) in a multi-regional configuration, specifically in two distinct geographic regions. The deployment will be based on an existing DA template, followed by a series of manual customizations to tailor the setup to the specific requirements of your environment.
+## Setting up the initial deployment
+{: #initial-deployment-power-vs} 
 
-Deployment Steps and Customization:
+Deploy the Power Virtual Server with VPC landing zone DA twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](https://cloud.ibm.com/docs/deployable-reference-architectures?topic=deployable-reference-architectures-deploy-arch-ibm-pvs-inf-full-stack){: external}.
+.
 
-1. Initial Deployment:
-
-   * Deploy the "Power Virtual Server with VPC landing zone" DA twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](https://cloud.ibm.com/docs/deployable-reference-architectures?topic=deployable-reference-architectures-deploy-arch-ibm-pvs-inf-full-stack).
-2. Manual Initial Customization:
+## Completing the initial manual customization
+{: #initial-customization}
 
    * In Region B, after ensuring that no active connections depend on it, remove the existing transit gateway (you will need to remove the VPC and PowerVS connections first) to streamline network management and resource optimization.
    * In region A, designate the remaining transit gateway as global, enhancing its role in facilitating inter-region connectivity for your Power Virtual Server workspaces and VPCs.
@@ -40,7 +39,7 @@ Deployment Steps and Customization:
 ## Oracle Deployment and customization:
 {: #deploy-oracle}
 
-The initial landing zone deployment described above does not encompass:
+The initial landing zone deployment does not include the following. 
 
 * Oracle Deployment : The setup and configuration of Oracle environments, including any necessary databases, applications, or middleware components.
 * Oracle DR and RAC Configuration and Deployment : Designing and deploying Oracle High Availability (HA) solutions, Data Guard configurations for disaster recovery, Real Application Clusters (RAC), or other Oracle HA features as specified by Oracle best practices.
