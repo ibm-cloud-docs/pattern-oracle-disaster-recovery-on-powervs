@@ -50,17 +50,17 @@ The following figure shows high-level deployment architecture with Oracle Data G
 - Primary environment is the IBM Frankfurt region and the secondary environment is the customer’s existing data center.
 - Configure network connectivity that is accomplished through Direct Links to the primary region with VPN access for Managed Service Providers (MSPs).
 - An Edge VPC is deployed which contains routing and security functions. For security purposes, all ingress and egress traffic routes through the Edge VPC. It contains an SFTP server, Bastion host (jump), Firewalls providing advanced security functions.
-- The Edge VPC is connected to the PowerVS environment through a local Transit Gateway. The PowerVS environment hosts the Oracle DB, the rest of the customer environment is hosted in VPC.
+- The Edge VPC is connected to the PowerVS environment through a local Transit Gateway. The PowerVS environment hosts the Oracle Database, the rest of the customer environment is hosted in VPC.
 - Public connectivity routes through Cloud Internet services that can provide load balancing, failover, and DDoS services, then routes to the edge VPC
 - The VPC connections to the PowerVS environment through a TGW and GRE tunnel.
 - Virtual Private endpoints are used to provide connectivity to cloud native services from each VPC.
 - Ensure that the connectivity from customer environment is established to IBM PowerVS and security aspects are considered. To address the networking requirements, ensure to follow the steps at the following [link](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-network-architecture-diagrams).
-- Oracle DB is installed in LPARS with multiple Tier 1 LUNs for OS and DB that are used for boot and database executable and to store DB schema.
+- Oracle Database is installed in LPARS with multiple Tier 1 LUNs for Operating System and Database that are used for boot and database executable and to store Database schema.
 
 ### Oracle disaster recovery that uses Oracle Data Guard
 {: #oracle-data-guard}
 
-The Oracle Disaster recovery solution approach across IBM PowerVS and customer data center uses Oracle Data Guard to achieve Disaster recovery of Oracle DB across IBM Power Virtual Server and the customer Data Center.
+The Oracle Disaster recovery solution approach across IBM PowerVS and customer data center uses Oracle Data Guard to achieve Disaster recovery of Oracle Database across IBM Power Virtual Server and the customer Data Center.
 
 ![Figure Oracle Disaster Recovery across Power Virtual Server environment and on-premises using Oracle DG replication methods](image/pvsibm-onprem-Oracle-across-IBM&on-Premises.drawio.svg){: caption="Figure 2. Oracle Disaster Recovery across Power Virtual Server environment and on-premises" caption-side="bottom"}
 
@@ -103,7 +103,7 @@ Table showing the components used for Oracle replication
 
 | Software component                                               | Target system component | Description                                         |
 | ---------------------------------------------------------------- | ----------------------- | --------------------------------------------------- |
-| DB replication Data Guard                                        | Installed on LPAR       | Used for Oracle DB replication across another site. |
+| Database replication Data Guard                                        | Installed on LPAR       | Used for Oracle Database replication across another site. |
 | {: caption="Table 1. Software components" caption-side="bottom"} |                         |                                                     |
 
 Active Data Guard enables you to read while the data is syncing. There is no need to pause they sync process.
@@ -120,7 +120,7 @@ Ensure that you complete the prerequisites for IBM Power Virtual Server environm
 To configure the Power Virtual Server and Oracle Database:
 
 1. [Install and Configure AIX LPARs and LUNs](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
-2. Install Oracle DB and configure LUNs on tier 1.
+2. Install Oracle Database  and configure LUNs on tier 1.
 3. Configure and test Oracle Data Guard across both the sites to ensure that replication across sites meets your objective.
 
 ## Design scope
