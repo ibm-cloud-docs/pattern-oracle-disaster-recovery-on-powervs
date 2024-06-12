@@ -28,26 +28,31 @@ content-type: reference-architecture
 {{site.data.keyword.attribute-definition-list}}
 
 # Oracle Database Disaster Recovery on IBM PowerVS Cross Region
+
 {: #Oracle-dr-ibm-pvs}
 {: toc-content-type="reference-architecture"}
 {: toc-use-case="cloud"}
 {: toc-version="1.0"}
 
 ## Architecture diagram
+
 {: #architecture-diagram}
 
 The reference architecture covers a solution overview and details on how to design an Oracle Disaster recovery deployable architecture on IBM Power Virtual Server environment.
+
+This reference architecture assumes that there are more non-Oracle Database x86 workloads that are hosted in the IBM Cloud VPC environment. The key components outlined here are required for an Oracle Database deployment on Power Virtual Server and x86 workloads on VPC in two IBM regions.
 
 The following figure describes an architecture approach for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
 ![Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions](image/pvs-on-ibm-pvs-across-ibm.drawio.svg){: caption="Figure 1. Oracle Disaster Recovery Solution" caption-side="bottom"}
 
-This reference architecture assumes that there are more non-Oracle Database x86 workloads that are hosted in the IBM Cloud VPC environment. The key components are outlined that are required for an Oracle Database deployment on Power Virtual Server and x86 workloads that are deployed on VPC in two regions.
 
 ### Deploying environments in this reference architecture
+
 {: #environments-deployed}
 
 - VPC environment
+
   - Edge VPC cluster: Hosts security components, firewall, and other edge services that are essential for a secure environment.
   - Management VPC cluster: Hosts all the management tool stacks that are needed to manage VPC and PowerVS environments.
   - Workload VPC cluster: The location where the IBM VPC virtual server instance (VSI) workloads are hosted(includes x86 workloads).
@@ -59,13 +64,14 @@ This reference architecture assumes that there are more non-Oracle Database x86 
   - Virtual Private end points: Used for connecting to IBM Cloud services over the private network such as Activity Tracker, Event Streams, or Cloud Object Storage.
   - Monitoring tools: Tools include Activity tracker, Log DNA, and so on.
   - Backup Environment through IBM Storage Protect or Veeam
-
 - Power VS Environment
+
   - Workload Power VS cluster: The actual Oracle Database instance.
-  - Storage that's required for LPARS.
+  - Storage that's required for Logical Partitions (LPARS).
   - Cloud Object Storage is configured for backup.
 
 ### Oracle Disaster Recovery that uses Oracle Data Guard
+
 {: #oracle-data-guard}
 
 In this section, we look at how to use Oracle Database Enterprise edition and use the Oracle Data Guard feature for disaster recovery. We set up a database instance in IBM PowerVS primary region and secondary region and configure Data Guard failover for disaster recovery.
@@ -80,6 +86,7 @@ The following figure illustrates the reference architecture based on Oracle Data
 ![Oracle Disaster Recovery across different IBM PowerVS regions that uses Oracle Data Guard](image/pvs-on-ibm-Oracle-dataguard-across-ibm.drawio.svg){: caption="Figure 2. Oracle Disaster Recovery across regions" caption-side="bottom"}
 
 ### Deployment guidance
+
 {: #deployment-guidance}
 
 Review the key steps for setting up the Oracle database and Data Guard in IBM Power Systems Virtual Server.
@@ -93,7 +100,7 @@ Review the key steps for setting up the Oracle database and Data Guard in IBM Po
 - [Create a primary LPARS that runs Database servers](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server#creating-power-virtual-server). This includes both sites: primary and secondary.
 - Create and attach disks for Oracle software that is provided by IBM PowerVS (tier 1)
 - Optional: [Importing a boot image](/docs/power-iaas?topic=power-iaas-importing-boot-image)
-- Perform Operating System (OS) prerequisite steps
+- Install operating system (OS) and configure accordingly
 - [Install Oracle database according to Oracle guidance and recommendations](https://docs.oracle.com/en/database/oracle/oracle-database/23/dgbkr/oracle-data-guard-broker-installation-requirements.html#GUID-21393DF3-FD7E-44AA-A90C-6533E03CBDDA){: external}
 - Install and configure the Oracle Data Guard software
 
@@ -101,6 +108,7 @@ As a best practice, create a non-production environment similar to a production 
 {: note}
 
 ### Network architecture guidance
+
 {: #network-guidance}
 
 ![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.drawio.jpg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
@@ -116,6 +124,7 @@ Make sure that you have a proper networking architecture and connection that is 
 5. Establish a GRE tunnel (GREa) between the Gateway Router in VPC (NGFW) and the customer router.
 
 ## Design scope
+
 {: #design-scope}
 
 This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers the following resiliency patterns including cross-region disaster recovery of Oracle Database that uses Oracle Data Guard.
@@ -134,6 +143,7 @@ Following the [Architecture Design Framework](/docs/architecture-framework?topic
 The Architecture Design Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more information, see [Introduction to the Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro).
 
 ## Requirements
+
 {: #requirements}
 
 The following represents a baseline set of requirements that we believe are applicable to most clients and critical to successful Oracle Disaster Recovery deployment. This set of requirements are key considerations for a successful disaster recovery setup of power workloads and other co-existing applications in IBM Power Systems Virtual Server environments, IBM Cloud, and customer Data Centers.
@@ -149,6 +159,7 @@ The following represents a baseline set of requirements that we believe are appl
 | {: caption="Table 1. Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ## Components
+
 {: #components}
 
 The common solution components that are listed in the following table are those components that are needed for both scenarios.
