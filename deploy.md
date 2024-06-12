@@ -69,7 +69,7 @@ Make sure that you have an SSH key that you can use for authentication. This key
 
 ### Additional information
 
-Please follow the link for setting up our environment for [deployable architecture](https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan)
+Please follow the link for setting up your environment for [deployable architecture](https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan)
 
 ## Setting up the initial deployment
 
@@ -90,7 +90,6 @@ Deploy the Power Virtual Server with VPC landing zone deployable  architecture (
 * Reconnect any Power Virtual Server workspaces and VPCs that were previously disconnected (in region B) to the global transit gateway established in Region A. This step ensures a unified and fully connected network across all regions.
 * Deploy the necessary number of PowerVS LPARs (Logical Partitions) in each region, ensuring they are configured according to your application requirements.
 * Optionally, in both Regions (A & B), add additional VPCs/subnets/ACLs/security groups to expand your network infrastructure and cater to your specific needs.
-
 
 ## Manual Networking Configuration:
 
@@ -113,4 +112,3 @@ Here is the list of additional tasks required for Oracle Database configuration 
 * Oracle DR and RAC Configuration and Deployment : Designing and deploying Oracle High Availability (HA) solutions, Data Guard configurations for disaster recovery, Real Application Clusters (RAC), or other Oracle HA features as specified by Oracle best practices.
 * Oracle Backup, HA and DR configuration and strategy : Establishing backup strategies, disaster recovery plans, and high availability setups specifically tailored to Oracle systems.
 * Customer-Specific Networking and Firewall Setup : Custom network configurations and firewall settings that go beyond the standard configurations provided in the DA template to meet precise customer requirements or preferences.
-
