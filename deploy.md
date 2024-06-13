@@ -84,9 +84,11 @@ Deploy the Power Virtual Server with VPC landing zone deployable  architecture (
 
 {: #initial-customization}
 
+After deploying the the Power Virtual Server with VPC landing zone deployable architecture, the following changes are needed to achieve the Oracle Database Disaster Recovery on IBM PowerVS Cross Region reference architecture described in this pattern.
+
 * Selection two regions for your deployment A and B.
 * In region A, designate the transit gateway as global, allowing inter-region connectivity for your Power Virtual Server workspaces and VPCs.
-* In Region B, after ensuring that no active connections depend on it, remove the existing transit gateway (you will need to remove the VPC and PowerVS connections first).
+* In Region B, after ensuring that no active connections depend on it, remove the existing transit gateway. You will need to remove the existing VPC and PowerVS connections before you can delete the transit gateway.
 * Reconnect any Power Virtual Server workspaces and VPCs that were previously disconnected (in region B) to the global transit gateway established in Region A. This step ensures a unified and fully connected network across all regions.
 * Deploy the necessary number of PowerVS LPARs (Logical Partitions) in each region, ensuring they are configured according to your application requirements.
 * Optionally, in both Regions (A & B), add additional VPCs/subnets/ACLs/security groups to expand your network infrastructure and cater to your specific needs.
@@ -95,7 +97,7 @@ Deploy the Power Virtual Server with VPC landing zone deployable  architecture (
 
 {: #deploy-networking}
 
-Please consider these additional changes as a part of your networking design and deployment.
+Please consider these additional changes as a part of your networking design and deployment to ensure your specific requirements are met.
 
 * Firewall Appliance Configuration : Configure firewalls according to customer preferences and security requirements, ensuring that the chosen firewall solution aligns with the intended level of protection and access control policies. Also ensure the proper routing rules are configured in the VPCs (egress and ingress) but also on the customer on premise router to steer traffic to the chosen firewall solution.
 * DR Networking Configuration : Implement customized solutions for disaster recovery networking, which includes configuring VPC routing rules, setting up appropriate firewall rules, and any other network configurations required to support your DR strategy.

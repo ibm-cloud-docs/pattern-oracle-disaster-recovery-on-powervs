@@ -62,7 +62,7 @@ The following figure describes an architecture approach for deploying a disaster
   - Load Balancer: An option if the customer needs a private application load balancer.
   - Cloud internet Service: An option  if public global load balancing or DDoS services are needed.
   - Virtual Private end points: Used for connecting to IBM Cloud services over the private network such as Activity Tracker, Event Streams, or Cloud Object Storage.
-  - Monitoring tools: Tools include Activity tracker, Log DNA, and so on.
+  - Monitoring tools: Tools include Activity tracker, Log DNA and IBM Cloud Monitoring.
   - Backup Environment through IBM Storage Protect or Veeam
 - Power VS Environment
 
@@ -78,9 +78,9 @@ In this section, we look at how to use Oracle Database Enterprise edition and us
 
 The following figure illustrates the reference architecture based on Oracle Data Guard.
 
-- Two IBM Power Virtual Server environment regions, for example, FRA AZ1 (FRA02) and MAD AZ1 (AZ1).
-- Oracle database is installed on IBM Power Virtual Server LPARS in two separate Regions
-- Oracle database Enterprise Edition that includes Data Guard, is used to provide real-time replications across the two separate Oracle Databases in each region over a Global Transit Gateway.
+- Two IBM Power Virtual Server environment regions, for example, FRA AZ1 (FRA02) and MAD AZ1 (MAD02).
+- Oracle Database is installed on IBM Power Virtual Server LPARS in two separate Regions
+- Oracle Database Enterprise Edition that includes Data Guard, is used to provide real-time replications across the two separate Oracle Databases in each region over a Global Transit Gateway.
 - The primary region is Frankfurt and the secondary region is Madrid.
 
 ![Oracle Disaster Recovery across different IBM PowerVS regions that uses Oracle Data Guard](image/pvs-on-ibm-Oracle-dataguard-across-ibm.drawio.svg){: caption="Figure 2. Oracle Disaster Recovery across regions" caption-side="bottom"}
@@ -89,7 +89,7 @@ The following figure illustrates the reference architecture based on Oracle Data
 
 {: #deployment-guidance}
 
-Review the key steps for setting up the Oracle database and Data Guard in IBM Power Systems Virtual Server.
+Review the key steps for setting up the Oracle Database and Data Guard in IBM Power Systems Virtual Server.
 
 - Ensure that you have a proper connection that is established between your on-premises data center to IBM Power Systems virtual Server regions.
 - [Validate network connectivity](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams)
@@ -97,11 +97,11 @@ Review the key steps for setting up the Oracle database and Data Guard in IBM Po
 - [Configure VPN for managed service team such as a Day 2 operation team needs VPN access](/docs/power-iaas?topic=power-iaas-VPN-connections)
 - [Site to Site VPN for resiliency purpose](https://cloud.ibm.com/media/docs/downloads/power-iaas-tutorials/PowerVS_VPN_Tutorial_v1.pdf){: external}
 - [Configure and integrate with VPC environment](/docs/power-iaas?topic=power-iaas-powervs-integration-x86-workloads)
-- [Create a primary LPARS that runs Database servers](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server#creating-power-virtual-server). This includes both sites: primary and secondary.
+- [Create a primary LPARS that runs database servers](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server#creating-power-virtual-server). This includes both sites: primary and secondary.
 - Create and attach disks for Oracle software that is provided by IBM PowerVS (tier 1)
 - Optional: [Importing a boot image](/docs/power-iaas?topic=power-iaas-importing-boot-image)
-- Install operating system (OS) and configure accordingly
-- [Install Oracle database according to Oracle guidance and recommendations](https://docs.oracle.com/en/database/oracle/oracle-database/23/dgbkr/oracle-data-guard-broker-installation-requirements.html#GUID-21393DF3-FD7E-44AA-A90C-6533E03CBDDA){: external}
+- Configure the operating system for Oracle (exact steps depending on the operating system)
+- [Install Oracle Database according to Oracle guidance and recommendations](https://docs.oracle.com/en/database/oracle/oracle-database/23/dgbkr/oracle-data-guard-broker-installation-requirements.html#GUID-21393DF3-FD7E-44AA-A90C-6533E03CBDDA){: external}
 - Install and configure the Oracle Data Guard software
 
 As a best practice, create a non-production environment similar to a production setup, but non-production can have tier 3 storage and lower CPU as they don’t have high-performance requirements.
