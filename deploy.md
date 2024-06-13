@@ -29,12 +29,12 @@ Complete the following steps before you deploy the VPC landing zone deployable a
 
 1. Confirm or set up an IBM Cloud account:
    Make sure that you have an IBM Cloud Pay-As-You-Go or Subscription account:
-   * If you don't have an IBM Cloud account,** **[create one](https://cloud.ibm.com/docs/account?topic=account-account-getting-started).
-   * If you have a Trial or Lite account,** **[upgrade your account](https://cloud.ibm.com/docs/account?topic=account-upgrading-account).
+   * If you don't have an IBM Cloud account,** **[create one](/docs/account?topic=account-account-getting-started).
+   * If you have a Trial or Lite account,** **[upgrade your account](/docs/account?topic=account-upgrading-account).
 2. Configure your IBM Cloud account:
    1. Log in to** **[IBM Cloud](https://cloud.ibm.com/) with the IBMid you used to set up the account. This IBMid user is the account owner and has full IAM access.
-   2. [Complete the company profile](https://cloud.ibm.com/docs/account?topic=account-contact-info) and contact information for the account. This profile is required to stay in compliance with IBM Cloud Financial Services profile.
-   3. Enable virtual routing and forwarding (VRF) and service endpoints by creating a support case. Follow the instructions in** **[enabling VRF and service endpoints](https://cloud.ibm.com/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf).
+   2. [Complete the company profile](/docs/account?topic=account-contact-info) and contact information for the account. This profile is required to stay in compliance with IBM Cloud Financial Services profile.
+   3. Enable virtual routing and forwarding (VRF) and service endpoints by creating a support case. Follow the instructions in** **[enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf).
 
 ### Set the IAM permissions
 
@@ -69,7 +69,7 @@ Make sure that you have an SSH key that you can use for authentication. This key
 
 ### Additional information
 
-Please follow the link for setting up your environment for [deployable architecture](https://cloud.ibm.com/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan)
+Please follow the link for setting up your environment for [deployable architecture](/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan)
 
 ## Setting up the initial deployment
 
@@ -77,7 +77,7 @@ Please follow the link for setting up your environment for [deployable architect
 
 Before you start creating environment, ensure you have above prequisite completed and you have configured primary and secondary region.
 
-Deploy the Power Virtual Server with VPC landing zone deployable  architecture (DA) twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](https://cloud.ibm.com/docs/deployable-reference-architectures?topic=deployable-reference-architectures-deploy-arch-ibm-pvs-inf-full-stack).
+Deploy the Power Virtual Server with VPC landing zone deployable  architecture (DA) twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](/docs/deployable-reference-architectures?topic=deployable-reference-architectures-deploy-arch-ibm-pvs-inf-full-stack).
 .
 
 ## Initial Customization
