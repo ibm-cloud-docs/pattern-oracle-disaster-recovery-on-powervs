@@ -54,7 +54,7 @@ The following figure shows high-level deployment architecture with Oracle Data G
 - Public connectivity routes through Cloud Internet services that can provide load balancing, failover, and DDoS services, then routes to the edge VPC
 - The VPC connections to the PowerVS environment through a TGW and GRE tunnel.
 - Virtual Private endpoints are used to provide connectivity to cloud native services from each VPC.
-- Ensure that the connectivity from customer environment is established to IBM PowerVS and security aspects are considered. To address the networking requirements, ensure to follow the steps at the following [link](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-network-architecture-diagrams).
+- Ensure that the connectivity from customer environment is established to IBM PowerVS and security aspects are considered. To address the networking requirements, ensure to follow the steps at the following [link](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams).
 - Oracle Database is installed in LPARS with multiple Tier 1 LUNs for Operating System and Database that are used for boot and database executable and to store Database schema.
 
 ### Oracle disaster recovery that uses Oracle Data Guard
@@ -119,7 +119,7 @@ Ensure that you complete the prerequisites for IBM Power Virtual Server environm
 
 To configure the Power Virtual Server and Oracle Database:
 
-1. [Install and Configure AIX LPARs and LUNs](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
+1. [Install and Configure AIX LPARs and LUNs](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
 2. Install Oracle Database  and configure LUNs on tier 1.
 3. Configure and test Oracle Data Guard across both the sites to ensure that replication across sites meets your objective.
 
@@ -134,7 +134,7 @@ This document provides design recommendations for an Oracle Database deployment 
 
 Following the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro), the Resiliency Patterns cover design considerations for the following aspects and domains:
 
-The Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers design considerations and architecture decisions for the following aspects and domains (as defined in the [Architecture Design Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)):
+The Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers design considerations and architecture decisions for the following aspects and domains (as defined in the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro)):
 
 - **Compute:** Virtual Servers
 - **Storage:** Primary Storage, Backup Storage

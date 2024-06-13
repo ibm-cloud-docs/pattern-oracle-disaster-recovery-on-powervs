@@ -27,7 +27,7 @@ The Flexibility of IBM Power Systems Virtual Servers hardware capability include
 
 The IBM Power Systems Virtual Server environment consists of SAN Storage, Power Systems servers, PowerVM Hypervisor, and AIX Operating Systems that are certified for Oracle DB (12c, 18c, 19c) including RAC. IBM collaborated with Oracle through our longstanding joint technical partnership to ensure that IBM Power Systems Virtual Server meets the current requirements of a certified and supported stack. The environment is considered supported under these requirements if it runs a stack as described. In addition, since the environment is built on LPARs, it is consistent with Oracle's current hard partitioning guidelines, if LPM is not used with the LPARs running Oracle DB. Oracle licensing is always based on the contract between the customer and Oracle.
 
-Oracle publishes their current DB certifications of the PowerVM hypervisor, its features, AIX 7.1, 7.2 & 7.3, and confirms support of these features here: https://www.oracle.com/database/technologies/virtualization-matrix.html.
+Oracle publishes their current DB certifications of the PowerVM hypervisor, its features, AIX 7.1, 7.2 & 7.3, and confirms support of these features here: https://www.oracle.com/database/technologies/virtualization-matrix.html.{: external}
 
 When you create the PowerVS LPARS (also referred to as instances and VMs) there are several considerations regarding processor mode, processor pools, pinning, and affinity.
 
