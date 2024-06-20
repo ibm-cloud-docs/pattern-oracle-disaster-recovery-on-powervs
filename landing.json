@@ -10,7 +10,7 @@
     },
     {
       "title": "Oracle Database Disaster Recovery on IBM PowerVS Cross Region",
-      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-Oracle-dr-ibm-pvs", 
+      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-oracle-database-disaster-recovery-on-ibm-powervs-cross-region", 
       "deployable": false
     }
   ]
