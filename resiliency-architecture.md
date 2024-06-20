@@ -12,8 +12,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Architecture decisions for backup
-
-{: \#architecture-backup}
+{: #architecture-backup}
 
 Power Systems Virtual Server users can implement any compatible agent-based backup for AIX virtual machines (VM). Veeam for AIX and IBM Storage Protect are two commonly used backup strategies.
 

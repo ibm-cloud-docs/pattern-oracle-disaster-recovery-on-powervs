@@ -28,14 +28,12 @@ content-type: reference-architecture
 {{site.data.keyword.attribute-definition-list}}
 
 # Oracle Database Disaster Recovery between Customer DC and IBM PowerVS
-
 {: #Oracle-dr-ibm-clientdc-pvs}
 {: toc-content-type="reference-architecture"}
 {: toc-use-case="cloud"}
 {: toc-version="1.0"}
 
 ## Architecture diagram
-
 {: #architecture-diagram}
 
 This reference architecture covers a solution overview and details on how to design an Oracle Disaster recovery architecture on IBM Power Virtual Server environment and customer's existing data center.
@@ -43,7 +41,6 @@ This reference architecture covers a solution overview and details on how to des
 We assume that the primary workload is hosted on IBM Power Systems Virtual Server workspace and the Disaster recovery is hosted in a customer or 3rd Party Data center, however the workloads can also be reversed where the secondary workload is in IBM PowerVS and the primary workload is in the customer Data center.
 
 ### Architecture overview
-
 {: #architecture-overview}
 
 The following figure shows high-level deployment architecture with Oracle Data Guard and without Oracle Data Guard. It considers IBM PowerVS hosting as the primary site and the customer Data Center as the secondary site (DR). IBM VPC hosts common shared services such as IAM, DNS, Monitoring, management tools, and x86 workloads.
@@ -53,25 +50,23 @@ The following figure shows high-level deployment architecture with Oracle Data G
 - Primary environment is the IBM Frankfurt region and the secondary environment is the customer’s existing data center.
 - Configure network connectivity that is accomplished through Direct Links to the primary region with VPN access for Managed Service Providers (MSPs).
 - An Edge VPC is deployed which contains routing and security functions. For security purposes, all ingress and egress traffic routes through the Edge VPC. It contains an SFTP server, Bastion host (jump), Firewalls providing advanced security functions.
-- The Edge VPC is connected to the PowerVS environment through a local Transit Gateway. The PowerVS environment hosts the Oracle DB, the rest of the customer environment is hosted in VPC.
+- The Edge VPC is connected to the PowerVS environment through a local Transit Gateway. The PowerVS environment hosts the Oracle Database, the rest of the customer environment is hosted in VPC.
 - Public connectivity routes through Cloud Internet services that can provide load balancing, failover, and DDoS services, then routes to the edge VPC
 - The VPC connections to the PowerVS environment through a TGW and GRE tunnel.
 - Virtual Private endpoints are used to provide connectivity to cloud native services from each VPC.
-- Ensure that the connectivity from customer environment is established to IBM PowerVS and security aspects are considered. To address the networking requirements, ensure to follow the steps at the following [link](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-network-architecture-diagrams).
-- Oracle DB is installed in LPARS with multiple Tier 1 LUNs for OS and DB that are used for boot and database executable and to store DB schema.
+- Ensure that the connectivity from customer environment is established to IBM PowerVS and security aspects are considered. To address the networking requirements, ensure to follow the steps at the following [link](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams).
+- Oracle Database is installed in LPARS with multiple Tier 1 LUNs for Operating System and Database that are used for boot and database executable and to store Database schema.
 
 ### Oracle disaster recovery that uses Oracle Data Guard
-
 {: #oracle-data-guard}
 
-The Oracle Disaster recovery solution approach across IBM PowerVS and customer data center uses Oracle Data Guard to achieve Disaster recovery of Oracle DB across IBM Power Virtual Server and the customer Data Center.
+The Oracle Disaster recovery solution approach across IBM PowerVS and customer data center uses Oracle Data Guard to achieve Disaster recovery of Oracle Database across IBM Power Virtual Server and the customer Data Center.
 
 ![Figure Oracle Disaster Recovery across Power Virtual Server environment and on-premises using Oracle DG replication methods](image/pvsibm-onprem-Oracle-across-IBM&on-Premises.drawio.svg){: caption="Figure 2. Oracle Disaster Recovery across Power Virtual Server environment and on-premises" caption-side="bottom"}
 
 The reference architect to host Oracle Database and x86 workloads on IBM cloud, includes key components that are required for oracle deployment on the Power Virtual Server environment.
 
 ### Environment that is deployed as a part of this reference architecture
-
 {: #environment-deployed}
 
 The primary environment workloads that are hosted in IBM include:
@@ -102,21 +97,19 @@ Carefully consider options for synchronous and asynchronous replication when you
 {: note}
 
 ### Software components used for the Oracle Data Guard deployment
-
 {: #software-components}
 
 Table showing the components used for Oracle replication
 
 | Software component                                               | Target system component | Description                                         |
 | ---------------------------------------------------------------- | ----------------------- | --------------------------------------------------- |
-| DB replication Data Guard                                        | Installed on LPAR       | Used for Oracle DB replication across another site. |
+| Database replication Data Guard                                        | Installed on LPAR       | Used for Oracle Database replication across another site. |
 | {: caption="Table 1. Software components" caption-side="bottom"} |                         |                                                     |
 
 Active Data Guard enables you to read while the data is syncing. There is no need to pause they sync process.
 {: note}
 
 ### Deployment architecture guidance
-
 {: #deployment-guidance}
 
 Ensure that you complete the prerequisites for IBM Power Virtual Server environment connectivity. Follow the necessary steps for a secured connection needed for a Power Virtual server environment. The Customer Data center connection to IBM Power virtual servers details are described in the [Cloud Docs](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams). For more information, see:
@@ -126,12 +119,11 @@ Ensure that you complete the prerequisites for IBM Power Virtual Server environm
 
 To configure the Power Virtual Server and Oracle Database:
 
-1. [Install and Configure AIX LPARs and LUNs](https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
-2. Install Oracle DB and configure LUNs on tier 1.
+1. [Install and Configure AIX LPARs and LUNs](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server).
+2. Install Oracle Database  and configure LUNs on tier 1.
 3. Configure and test Oracle Data Guard across both the sites to ensure that replication across sites meets your objective.
 
 ## Design scope
-
 {: #design-scope}
 
 This document provides design recommendations for an Oracle Database deployment on IBM Power Virtual Server environment to meet disaster recovery requirements. It covers resiliency patterns:
@@ -142,7 +134,7 @@ This document provides design recommendations for an Oracle Database deployment 
 
 Following the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro), the Resiliency Patterns cover design considerations for the following aspects and domains:
 
-The Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers design considerations and architecture decisions for the following aspects and domains (as defined in the [Architecture Design Framework](https://cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-intro)):
+The Oracle disaster recovery on IBM Power Virtual Systems Server architecture covers design considerations and architecture decisions for the following aspects and domains (as defined in the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro)):
 
 - **Compute:** Virtual Servers
 - **Storage:** Primary Storage, Backup Storage
@@ -156,7 +148,6 @@ The Oracle disaster recovery on IBM Power Virtual Systems Server architecture co
 The Architecture Design Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. See [Introduction to the Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro) for more details.
 
 ## Requirements
-
 {: #requirements}
 
 The following represents a baseline set of requirements that we believe are applicable to most clients and critical to successful Oracle Disaster Recovery deployment. This set of requirements are key considerations for a successful Disaster recovery setup of Power workloads and other co-existing applications in IBM Power Systems Virtual Server environments, IBM Cloud, and customer Data Centers.
@@ -172,7 +163,6 @@ The following represents a baseline set of requirements that we believe are appl
 | {: caption="Table 2. Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ## Components
-
 {: #components}
 
 The common solution components that are listed in the following table are those components that are needed for both scenarios.
@@ -203,4 +193,4 @@ The common solution components that are listed in the following table are those 
 |                                                         | [Activity Tracker Event Routing](/docs/atracker?topic=atracker-about)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Audit logs                                                                                                                                                |
 | {: caption="Table 3. Components" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                           |
 
-As mentioned earlier, the [Architecture Framework](/docs/architecture-framework?topic=architecture-framework-intro) is used to guide and determine the applicable aspects and domains for which architecture decisions need to be made based on customer requirements. The following sections contain the considerations and architecture decisions for the aspects and domains that are contained in the PowerVS common elements for both Oracle Resiliency solution patterns.
+As mentioned earlier, the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro) is used to guide and determine the applicable aspects and domains for which architecture decisions need to be made based on customer requirements. The following sections contain the considerations and architecture decisions for the aspects and domains that are contained in the PowerVS common elements for both Oracle Resiliency solution patterns.

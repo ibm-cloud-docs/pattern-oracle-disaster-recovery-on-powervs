@@ -36,7 +36,7 @@ IBM provides two cloud based key management services that integrate with PowerVS
 1. IBM Key Protect is a full-service multi-tenant encryption solution that allows data to be secured and stored in IBM Cloud using the latest envelope encryption techniques. You can integrate Key Protect with Power Systems Virtual Server to securely store and protect encryption key information for AIX
 2. IBM Cloud Hyper Protect Crypto Services (HPCS) is a dedicated key management service and hardware security module (HSM) in IBM Cloud. You can integrate HPCS with Power Systems Virtual Server to securely store and protect encryption key information for AIX
 
-For more information, see [here](/docs/power-iaas?topic=power-iaas-integrate-hpcs).
+For more information, see [here] (/docs/power-iaas?topic=power-iaas-integrate-hpcs).
 
 ### Database encryption
 {: #database-encryption}
@@ -47,4 +47,4 @@ The database system automatically and transparently encrypts and decrypts data w
 
 Typically, TDE uses a two-tiered key hierarchy, which is composed of a TDE master encryption key and a TDE data encryption key. The TDE data encryption key is used to encrypt and decrypt user data, while the TDE master encryption key is used to encrypt and decrypt the TDE data encryption key. 
 
-You can keep complete and exclusive control of your TDE master encryption keys by storing them in IBM Cloud Hyper Protect Crypto Services. For this purpose, you need to use the PKCS \#11 integration feature of Hyper Protect Crypto Services. For more information, see [here](https://cloud.ibm.com/docs/hs-crypto?topic=hs-crypto-tutorial-tde-pkcs11).
+You can keep complete and exclusive control of your TDE master encryption keys by storing them in IBM Cloud Hyper Protect Crypto Services. For this purpose, you need to use the PKCS \#11 integration feature of Hyper Protect Crypto Services. For more information, see [here](/docs/hs-crypto?topic=hs-crypto-tutorial-tde-pkcs11).

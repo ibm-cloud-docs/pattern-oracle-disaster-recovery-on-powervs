@@ -8,6 +8,8 @@ subcollection: pattern-oracle-disaster-recovery-on-powervs
 keywords:
 
 ---
+{{site.data.keyword.attribute-definition-list}}
+
 # Oracle Data Guard considerations
 {: #oracle-considerations}
 

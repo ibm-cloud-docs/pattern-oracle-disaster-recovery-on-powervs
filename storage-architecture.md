@@ -8,12 +8,10 @@ subcollection: pattern-oracle-disaster-recovery-on-powervs
 keywords:
 
 ---
-
 {{site.data.keyword.attribute-definition-list}}
 
 # Architecture decisions for storage
-
-{: \#architecture-storage}
+{: #architecture-storage}
 
 The following sections summarize the architecture decisions for storage for the Oracle Disaster Recovery on IBM Power Virtual Servers pattern.
 
@@ -24,5 +22,4 @@ The following sections summarize the architecture decisions for storage for the 
 | Workloads                 | For Oracle DG DB                                  | Tier 1         | Highest tier available As per Oracle recommendations, for Production and non-production workloads use Tier 1 |
 | Workloads                 | For DB backup                                     | Tier 3         | Backup of DB using RMAN                                                                                      |
 | Workloads                 | For DB and LPAR archival                          | COS            | Long term backup                                                                                             |
-
 {: caption="Table 1. Architecture decisions for storage" caption-side="bottom"}
