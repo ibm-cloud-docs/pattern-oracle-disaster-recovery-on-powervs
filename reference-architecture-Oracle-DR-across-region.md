@@ -28,7 +28,6 @@ content-type: reference-architecture
 {{site.data.keyword.attribute-definition-list}}
 
 # Oracle Database Disaster Recovery on IBM PowerVS Cross Region
-
 {: #Oracle-dr-ibm-pvs}
 {: toc-content-type="reference-architecture"}
 {: toc-use-case="cloud"}
@@ -111,17 +110,15 @@ As a best practice, create a non-production environment similar to a production 
 
 {: #network-guidance}
 
-![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.jpg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
+![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.svg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
 
 This figure shows required network components from customer Data center to IBM Power Systems Virtual Server.
 
 Make sure that you have a proper networking architecture and connection that is established from your on-premises data center to an IBM Power Systems virtual server workplace. Refer to guidance on [IBM Cloud docs](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams).
 
 1. Establish Direct 2.0 Link to VPC IBM Cloud account
-2. Establish a GRE tunnel (GREb) between the Gateway Router in VPC (NGFW) and the PowerVS Layer 3 device (ensure that you have the right credentials)
-3. Enable Transit Gateway to connect PowerVS and VPC. Have the right VLAN created when you set up your account for VPC and PowerVS
-4. PowerVS Connection to global TGW
-5. Establish a GRE tunnel (GREa) between the Gateway Router in VPC (NGFW) and the customer router.
+2. Enable Transit Gateway to connect PowerVS and VPC. Have the right VLAN created when you set up your account for VPC and PowerVS
+3. PowerVS Connection to global TGW
 
 ## Design scope
 
