@@ -111,7 +111,7 @@ As a best practice, create a non-production environment similar to a production 
 
 {: #network-guidance}
 
-![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.drawio.jpg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
+![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.jpg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
 
 This figure shows required network components from customer Data center to IBM Power Systems Virtual Server.
 
@@ -120,7 +120,7 @@ Make sure that you have a proper networking architecture and connection that is 
 1. Establish Direct 2.0 Link to VPC IBM Cloud account
 2. Establish a GRE tunnel (GREb) between the Gateway Router in VPC (NGFW) and the PowerVS Layer 3 device (ensure that you have the right credentials)
 3. Enable Transit Gateway to connect PowerVS and VPC. Have the right VLAN created when you set up your account for VPC and PowerVS
-4. PowerVS Connection to LTGW and GTGW
+4. PowerVS Connection to global TGW
 5. Establish a GRE tunnel (GREa) between the Gateway Router in VPC (NGFW) and the customer router.
 
 ## Design scope
