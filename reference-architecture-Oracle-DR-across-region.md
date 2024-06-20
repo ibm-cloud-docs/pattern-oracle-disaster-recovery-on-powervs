@@ -28,7 +28,6 @@ content-type: reference-architecture
 {{site.data.keyword.attribute-definition-list}}
 
 # Oracle Database Disaster Recovery on IBM PowerVS Cross Region
-
 {: #Oracle-dr-ibm-pvs}
 {: toc-content-type="reference-architecture"}
 {: toc-use-case="cloud"}
