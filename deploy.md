@@ -69,7 +69,7 @@ Make sure that you have an SSH key that you can use for authentication. This key
 
 ### Additional information
 
-Please follow the link for setting up your environment for [deployable architecture](/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan)
+Please follow the link for setting up your environment for [deployable architecture](/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
 
 ## Setting up the initial deployment
 
