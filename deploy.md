@@ -77,7 +77,7 @@ Please follow the link for setting up your environment for [deployable architect
 
 Before you start creating environment, ensure you have above prequisite completed and you have configured primary and secondary region.
 
-Deploy the Power Virtual Server with VPC landing zone deployable  architecture (DA) twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](/docs/deployable-reference-architectures?topic=deployable-reference-architectures-deploy-arch-ibm-pvs-inf-full-stack).
+Deploy the Power Virtual Server with VPC landing zone deployable  architecture (DA) twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](/docs/powervs-vpc?topic=powervs-vpc-deploy-arch-ibm-pvs-inf-standard).
 
 ## Initial Customization
 
