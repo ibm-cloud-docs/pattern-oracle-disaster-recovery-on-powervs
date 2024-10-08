@@ -10,7 +10,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Deploying a Power Virtual Server deployable architecture
-
 {: #powervs-da}
 
 This guide outlines deploying a Power Virtual Server with VPC landing zone deployable architecture in a multi-regional configuration, specifically in two distinct regions for a Oracle Database disaster recovery scenario. The deployment is based on an existing deployable architecture template, as well as a series of manual customizations to tailor the setup to the specific requirements for your environment.
@@ -20,11 +19,11 @@ This is designed for customers who need a scalable, multi-region infrastructure 
 Installation and configuration of Oracle Data Guard is not described in this section.
 
 ## Planning for the landing zone deployable architectures
-
+{: #powervs-plan}
 Before you begin the deployment of a landing zone deployable architecture, make sure that you understand and meet the prerequisites.
 
 ### Confirm your IBM Cloud settings
-
+{: #powervs-configure}
 Complete the following steps before you deploy the VPC landing zone deployable architecture.
 
 1. Confirm or set up an IBM Cloud account:
@@ -37,7 +36,7 @@ Complete the following steps before you deploy the VPC landing zone deployable a
    3. Enable virtual routing and forwarding (VRF) and service endpoints by creating a support case. Follow the instructions in [enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf).
 
 ### Set the IAM permissions
-
+{: #powervs-permissions}
 Set up account access (Cloud Identity and Access Management (IAM)):
 Create an IBM Cloud API key. The user who owns this key must have the Administrator role.
 
@@ -51,7 +50,7 @@ User access to IBM Cloud resources is controlled by using the access policies th
 Select All Identity and Access enabled services when you assign access to the group.
 
 ### Verify access roles
-
+{: #powervs-roles}
 IAM access roles are required to install this deployable architecture and create all the required elements.
 
 You need the following permissions for this deployable architecture:
@@ -64,15 +63,14 @@ You need the following permissions for this deployable architecture:
 For information about configuring permissions, contact your IBM Cloud account administrator.
 
 ### Create an SSH key
-
+{: #powervs-sshkey}
 Make sure that you have an SSH key that you can use for authentication. This key is used to log in to all virtual server instances that you create. For more information about creating SSH keys, see SSH keys.
 
 ### Additional information
-
+{: #powervs-additionalinfo}
 Please follow the link for setting up your environment for [deployable architecture](/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
 
 ## Setting up the initial deployment
-
 {: #initial-deployment-power-vs}
 
 Before you start creating environment, ensure you have above prequisite completed and you have configured primary and secondary region.
@@ -80,7 +78,6 @@ Before you start creating environment, ensure you have above prequisite complete
 Deploy the Power Virtual Server with VPC landing zone deployable  architecture (DA) twice: once in each target region (Region A and Region B). Utilize the provided documentation for guidance, available at [IBM Deployable Reference Architectures](/docs/powervs-vpc?topic=powervs-vpc-deploy-arch-ibm-pvs-inf-standard).
 
 ## Initial Customization
-
 {: #initial-customization}
 
 After deploying the the Power Virtual Server with VPC landing zone deployable architecture, the following changes are needed to achieve the Oracle Database Disaster Recovery on IBM PowerVS Cross Region reference architecture described in this pattern.
@@ -93,7 +90,6 @@ After deploying the the Power Virtual Server with VPC landing zone deployable ar
 * Optionally, in both Regions (A & B), add additional VPCs/subnets/ACLs/security groups to expand your network infrastructure and cater to your specific needs.
 
 ## Manual Networking Configuration:
-
 {: #deploy-networking}
 
 Please consider these additional changes as a part of your networking design and deployment to ensure your specific requirements are met.
@@ -103,7 +99,6 @@ Please consider these additional changes as a part of your networking design and
 * DNS and Networking Customization : Adjust DNS settings and further configure the networking aspects of the environment based on customer inputs. This will likely involve making specific assumptions and decisions to align with the unique requirements of the customer's infrastructure.
 
 ## Oracle Deployment and customization:
-
 {: #deploy-oracle}
 
 This section covers how an end user prepares their Power Virtual server environment for Oracle Database.
