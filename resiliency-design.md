@@ -40,7 +40,7 @@ Review your requirements before you design a backup regime.
 |                      | Backup                    | Frequency | Retention |
 |                      | Full                      | Weekly    | 1 Week    |
 |                      | Incremental               | Daily     | 30 Days   |
-{: caption="Table 1. Typical backup regime - Oracle database" caption-side="bottom"}
+{: caption="Typical backup regime - Oracle database" caption-side="bottom"}
 
 For OS level, Storage Protect is recommended for backup.
 
@@ -49,7 +49,7 @@ For OS level, Storage Protect is recommended for backup.
 |                      | Backup                      | Frequency | Retention |
 |                      | Full                        | Monthly   | 60 Days   |
 |                      | Incremental                 | Daily     | 60 Days   |
-{: caption="Table 2. Typical backup regime - OS and file systems" caption-side="bottom"}
+{: caption="Typical backup regime - OS and file systems" caption-side="bottom"}
 
 ## Oracle Data Guard considerations
 {: #oracle-data-guard}
@@ -67,7 +67,7 @@ Oracle Data Guard ensures data protection and disaster recovery for Oracle Datab
 | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Primary site failure (including all application servers) | Primary site contains all existing application servers (or mid-tier servers) that were connected to the failed primary database.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Full site failover is required.                                                                                                                                                                   |
 | Complete primary database or primary server failure      | Application servers are not impacted, and users can reconnect to a new primary database in a secondary disaster recovery site. Application performance and throughput are still acceptable with different network latency between application servers and a new primary database in a secondary disaster recovery site. Typically, analytical or reporting applications can tolerate higher network latency between client and database without any noticeable performance impact, while Online Transactional Processing (OLTP) applications performance might suffer more significantly if an increase in network latency between the application server and database occurs. | If performance is acceptable, a seamless connection failover is recommended to minimize downtime and enable automatic application and database failover. Otherwise, a full site failover is required. |
-{: caption="Table 3. Recommended failover options" caption-side="bottom"}
+{: caption="Recommended failover options" caption-side="bottom"}
 
 ## Full site failover best practices
 {: #best-practices}

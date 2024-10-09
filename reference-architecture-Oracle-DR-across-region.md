@@ -43,7 +43,7 @@ This reference architecture assumes that there are more non-Oracle Database x86 
 
 The following figure describes an architecture approach for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
-![Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions](image/pvs-on-ibm-pvs-across-ibm.svg){: caption="Figure 1. Oracle Disaster Recovery Solution" caption-side="bottom"}
+![Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions](image/pvs-on-ibm-pvs-across-ibm.svg){: caption="Oracle Disaster Recovery Solution" caption-side="bottom"}
 
 ### Deploying environments in this reference architecture
 {: #environments-deployed}
@@ -79,7 +79,7 @@ The following figure illustrates the reference architecture based on Oracle Data
 - Oracle Database Enterprise Edition that includes Data Guard, is used to provide real-time replications across the two separate Oracle Databases in each region over a Global Transit Gateway.
 - The primary region is Frankfurt and the secondary region is Madrid.
 
-![Oracle Disaster Recovery across different IBM PowerVS regions that uses Oracle Data Guard](image/pvs-on-ibm-Oracle-dataguard-across-ibm.svg){: caption="Figure 2. Oracle Disaster Recovery across regions" caption-side="bottom"}
+![Oracle Disaster Recovery across different IBM PowerVS regions that uses Oracle Data Guard](image/pvs-on-ibm-Oracle-dataguard-across-ibm.svg){: caption="Oracle Disaster Recovery across regions" caption-side="bottom"}
 
 ### Deployment guidance
 {: #deployment-guidance}
@@ -105,7 +105,7 @@ As a best practice, create a non-production environment similar to a production 
 ### Network architecture guidance
 {: #network-guidance}
 
-![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.svg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
+![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.svg){: caption="IBM Power Virtual server environment networking topology" caption-side="bottom"}
 
 This figure shows required network components from customer Data center to IBM Power Systems Virtual Server.
 
@@ -129,7 +129,7 @@ Following the [Architecture Design Framework](/docs/architecture-framework?topic
 - **Resiliency:** High Availability, Backup and Restore,
 - **Service Management:** Monitoring, Logging, Auditing, Alerting
 
-![Oracle resiliency architecture design scope](image/pvs-on-ibm-heat-map.svg){: caption="Figure 4. Architecture Design Framework" caption-side="bottom"}
+![Oracle resiliency architecture design scope](image/pvs-on-ibm-heat-map.svg){: caption="Architecture Design Framework" caption-side="bottom"}
 
 The Architecture Design Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more information, see [Introduction to the Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro).
 
@@ -146,7 +146,7 @@ The following represents a baseline set of requirements that we believe are appl
 | Security                                                  | * Ensure that all operator actions are run securely through a bastion host. \n * Protect the boundaries of the application against denial-of-service and application-layer attacks. \n * Encrypt all application data in transit and at rest to protect it from unauthorized disclosure. \n * Encrypt all backup data to protect it from unauthorized disclosure. \n * Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \n * Encrypt all data by using customer-managed keys to meet regulatory compliance requirements for more security and customer control. \n * Protect secrets through their entire lifecycle and secure them using access control measures. |
 | Resiliency                                                | Support application availability targets and business continuity policies. \n * Provide highly available compute, storage, network, and other cloud services to handle application load and performance requirements. \n * Backup application data to enable recovery if unplanned outages occur. \n * Provide highly available storage for security data (logs) and backup data.                                                                                                                                                                                                                                                                                                                                 |
 | Service Management                                        | * Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. \n * Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize downtime. \n * Monitor audit logs to track changes and detect potential security problems. \n * Provide a mechanism to identify and send notifications about issues that are found in audit logs.                                                                                                                                                                                                                                |
-| {: caption="Table 1. Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| {: caption="Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ## Components
 {: #components}
@@ -177,6 +177,6 @@ The common solution components that are listed in the following table are those 
 | Service Management (Observability)                      | [IBM Cloud Monitoring](/docs/monitoring?topic=monitoring-about-monitor)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Apps and operational monitoring                                                                                                                           |
 |                                                         | [IBM Cloud Logs](/docs/cloud-logs?topic=cloud-logs-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Apps and operational logs                                                                                                                                 |
 |                                                         | [IBM Cloud Logs](/docs/cloud-logs?topic=cloud-logs-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Audit logs                                                                                                                                                |
-| {: caption="Table 2. Components" caption-side="bottom"}
+| {: caption="Components" caption-side="bottom"}
 
 As mentioned, the [Architecture Framework](/docs/architecture-framework?topic=architecture-framework-intro) is used to guide and determine the applicable aspects and domains for which architecture decisions need to be made based on customer requirements. The following sections in this deployment guide contain the considerations and architecture decisions for the aspects and domains that are contained in the PowerVS common elements for both Oracle resiliency solution patterns.
