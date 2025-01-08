@@ -26,5 +26,4 @@ For more information, see [backup strategies](https://www.ibm.com/docs/fr/power-
 | Backup - PowerVS          | Backup LPARS     | IBM Storage Protect (SP) for AIX | Deployment Options: SP on AIX LPAR in PowerVS SP on IBM Cloud VPC Instance                                                                                                                                             |
 | Backup - PowerVS          | Backup LPARS     | Veeam Backup Restore for AIX     | Network Connection Required to Storage Target endpoint Veeam Agent for IBM AIX can be configured and installed, [please look for Veeam AIX guidance.](https://www.veeam.com/ibm-aix-oracle-solaris-backup.html)        |
 | Backup – Oracle           | Backup Database  | RMAN                             | RMAN is a native backup and recovery solution. For further best practices from oracle, please follow the guidance of RMAN at [Oracle portal](https://www.oracle.com/docs/tech/oda-backup-recovery-technical-brief.pdf) |
-
 {: caption="Architecture decisions for backup" caption-side="bottom"}

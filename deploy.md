@@ -68,6 +68,7 @@ For information about configuring permissions, contact your IBM Cloud account ad
 
 ### Create an SSH key
 {: #powervs-sshkey}
+
 Make sure that you have an SSH key that you can use for authentication. This key is used to log in to all virtual server instances that you create. For more information about creating SSH keys, see SSH keys.
 
 ### Additional information
