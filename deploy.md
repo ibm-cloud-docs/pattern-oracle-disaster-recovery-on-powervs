@@ -20,10 +20,12 @@ Installation and configuration of Oracle Data Guard is not described in this sec
 
 ## Planning for the landing zone deployable architectures
 {: #powervs-plan}
+
 Before you begin the deployment of a landing zone deployable architecture, make sure that you understand and meet the prerequisites.
 
 ### Confirm your IBM Cloud settings
 {: #powervs-configure}
+
 Complete the following steps before you deploy the VPC landing zone deployable architecture.
 
 1. Confirm or set up an IBM Cloud account:
@@ -37,6 +39,7 @@ Complete the following steps before you deploy the VPC landing zone deployable a
 
 ### Set the IAM permissions
 {: #powervs-permissions}
+
 Set up account access (Cloud Identity and Access Management (IAM)):
 Create an IBM Cloud API key. The user who owns this key must have the Administrator role.
 
@@ -51,6 +54,7 @@ Select All Identity and Access enabled services when you assign access to the gr
 
 ### Verify access roles
 {: #powervs-roles}
+
 IAM access roles are required to install this deployable architecture and create all the required elements.
 
 You need the following permissions for this deployable architecture:
@@ -68,6 +72,7 @@ Make sure that you have an SSH key that you can use for authentication. This key
 
 ### Additional information
 {: #powervs-additionalinfo}
+
 Please follow the link for setting up your environment for [deployable architecture](/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
 
 ## Setting up the initial deployment
