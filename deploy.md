@@ -20,10 +20,12 @@ Installation and configuration of Oracle Data Guard is not described in this sec
 
 ## Planning for the landing zone deployable architectures
 {: #powervs-plan}
+
 Before you begin the deployment of a landing zone deployable architecture, make sure that you understand and meet the prerequisites.
 
 ### Confirm your IBM Cloud settings
 {: #powervs-configure}
+
 Complete the following steps before you deploy the VPC landing zone deployable architecture.
 
 1. Confirm or set up an IBM Cloud account:
@@ -32,11 +34,12 @@ Complete the following steps before you deploy the VPC landing zone deployable a
    * If you have a Trial or Lite account, [upgrade your account](/docs/account?topic=account-upgrading-account).
 2. Configure your IBM Cloud account:
    1. Log in to [IBM Cloud](https://cloud.ibm.com/) with the IBMid you used to set up the account. This IBMid user is the account owner and has full IAM access.
-   2. [Complete the company profile](/docs/account?topic=account-contact-info) and contact information for the account. This profile is required to stay in compliance with IBM Cloud Financial Services profile.
+   2. [Complete the company profile](/docs/account?topic=account-usersettings#customer-profile) and contact information for the account. This profile is required to stay in compliance with IBM Cloud Financial Services profile.
    3. Enable virtual routing and forwarding (VRF) and service endpoints by creating a support case. Follow the instructions in [enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf).
 
 ### Set the IAM permissions
 {: #powervs-permissions}
+
 Set up account access (Cloud Identity and Access Management (IAM)):
 Create an IBM Cloud API key. The user who owns this key must have the Administrator role.
 
@@ -51,6 +54,7 @@ Select All Identity and Access enabled services when you assign access to the gr
 
 ### Verify access roles
 {: #powervs-roles}
+
 IAM access roles are required to install this deployable architecture and create all the required elements.
 
 You need the following permissions for this deployable architecture:
@@ -64,10 +68,12 @@ For information about configuring permissions, contact your IBM Cloud account ad
 
 ### Create an SSH key
 {: #powervs-sshkey}
+
 Make sure that you have an SSH key that you can use for authentication. This key is used to log in to all virtual server instances that you create. For more information about creating SSH keys, see SSH keys.
 
 ### Additional information
 {: #powervs-additionalinfo}
+
 Please follow the link for setting up your environment for [deployable architecture](/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
 
 ## Setting up the initial deployment

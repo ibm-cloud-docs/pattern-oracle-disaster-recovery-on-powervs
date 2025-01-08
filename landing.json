@@ -1,18 +1,49 @@
 {
+  "version": 2,
   "title": "Oracle  Disaster Recovery on IBM Power Virtual Systems Server",
-  "lastupdated": "2023-12-18",
-  "introduction": "This is a landing page for the reference architecture describing how to host Oracle Data Guard on IBM Power Virtual System Server environment.",
+  "introduction": "The Oracle  Disaster Recovery on IBM Power Virtual Systems Server pattern describes how to host Oracle Data Guard on IBM Power Virtual System Server environment.",
+  "section_topics": {
+      "links": [
+      {
+        "title": "Solution overview",
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-overview"
+      },
+      {
+        "title": "Compute",
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-compute-design"
+      },
+      {
+        "title": "Storage",
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-storage-design"
+      },
+      {
+        "title": "Networking",
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-design-network"
+      },
+      {
+        "title": "Security",
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-security-design"
+      },
+      {
+        "title": "Resiliency",
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-backup-restore-design"
+      },
+      {
+        "title": "Service management",
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-design-service-management"
+      }
+    ]
+  },
   "section_architectures": [
     {
       "title": "Oracle Database Disaster Recovery between Customer DC and IBM PowerVS",
-      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-oracle-database-disaster-recovery-between-customer-dc-and-ibm-powervs",
+      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disastopic=pattern-oracle-disaster-recovery-on-powervs-Oracle-dr-ibm-clientdc-pvs",
       "deployable": false
     },
     {
       "title": "Oracle Database Disaster Recovery on IBM PowerVS Cross Region",
-      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-oracle-database-disaster-recovery-on-ibm-powervs-cross-region", 
+      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-Oracle-dr-ibm-pvs", 
       "deployable": false
     }
   ]
- }
- 
+}

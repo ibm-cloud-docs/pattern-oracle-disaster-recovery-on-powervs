@@ -3,24 +3,19 @@ copyright:
   years: 2023
 lastupdated: "2024-08-10"
 
-keywords: # Not typically populated
+keywords:
 
 subcollection: pattern-oracle-disaster-recovery-on-powervs
 authors:
   - name: Dwarkanath P Rao
     url: https://www.linkedin.com/in/dwarakanath/
 
-# The release that the reference architecture describes
 version: 1.0
 
-# Use if the reference architecture has deployable code.
-# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
 deployment-url:
 
 docs: https://cloud.ibm.com/docs/pattern-oracle-disaster-recovery-on-powervs
-# use-case from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/topics/topics_flat_list.csv
+
 use-case: cloud
 
 content-type: reference-architecture
@@ -28,7 +23,6 @@ content-type: reference-architecture
 {{site.data.keyword.attribute-definition-list}}
 
 # Oracle Database Disaster Recovery on IBM PowerVS Cross Region
-
 {: #Oracle-dr-ibm-pvs}
 {: toc-content-type="reference-architecture"}
 {: toc-use-case="cloud"}
@@ -43,7 +37,7 @@ This reference architecture assumes that there are more non-Oracle Database x86 
 
 The following figure describes an architecture approach for deploying a disaster recovery solution for Oracle Database across IBM PowerVS regions.
 
-![Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions](image/pvs-on-ibm-pvs-across-ibm.svg){: caption="Figure 1. Oracle Disaster Recovery Solution" caption-side="bottom"}
+![Oracle Disaster Recovery Solution options across two IBM Power Virtual Server environment regions](image/pvs-on-ibm-pvs-across-ibm.svg){: caption="Oracle Disaster Recovery Solution" caption-side="bottom"}
 
 ### Deploying environments in this reference architecture
 {: #environments-deployed}
@@ -58,8 +52,8 @@ The following figure describes an architecture approach for deploying a disaster
   - VPN connection: The connection for managed services to provide cloud-managed operations.
   - Load Balancer: An option if the customer needs a private application load balancer.
   - Cloud internet Service: An option  if public global load balancing or DDoS services are needed.
-  - Virtual Private end points: Used for connecting to IBM Cloud services over the private network such as Activity Tracker, Event Streams, or Cloud Object Storage.
-  - Monitoring tools: Tools include Activity tracker, Log DNA and IBM Cloud Monitoring.
+  - Virtual Private end points: Used for connecting to IBM Cloud services over the private network such as Event Streams or Cloud Object Storage.
+  - Monitoring tools: Tools include IBM Cloud Logs and IBM Cloud Monitoring.
   - Backup Environment through IBM Storage Protect or Veeam
 - Power VS Environment
 
@@ -79,7 +73,7 @@ The following figure illustrates the reference architecture based on Oracle Data
 - Oracle Database Enterprise Edition that includes Data Guard, is used to provide real-time replications across the two separate Oracle Databases in each region over a Global Transit Gateway.
 - The primary region is Frankfurt and the secondary region is Madrid.
 
-![Oracle Disaster Recovery across different IBM PowerVS regions that uses Oracle Data Guard](image/pvs-on-ibm-Oracle-dataguard-across-ibm.svg){: caption="Figure 2. Oracle Disaster Recovery across regions" caption-side="bottom"}
+![Oracle Disaster Recovery across different IBM PowerVS regions that uses Oracle Data Guard](image/pvs-on-ibm-Oracle-dataguard-across-ibm.svg){: caption="Oracle Disaster Recovery across regions" caption-side="bottom"}
 
 ### Deployment guidance
 {: #deployment-guidance}
@@ -91,7 +85,7 @@ Review the key steps for setting up the Oracle Database and Data Guard in IBM Po
 - [Configure a private subnet](/docs/power-iaas?topic=power-iaas-configuring-subnet)
 - [Configure VPN for managed service team such as a Day 2 operation team needs VPN access](/docs/power-iaas?topic=power-iaas-VPN-connections)
 - [Site to Site VPN for resiliency purpose](https://cloud.ibm.com/media/docs/downloads/power-iaas-tutorials/PowerVS_VPN_Tutorial_v1.pdf){: external}
-- [Configure and integrate with VPC environment](/docs/power-iaas?topic=power-iaas-powervs-integration-x86-workloads)
+- [Configure and integrate with VPC environment](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams#per-vpc)
 - [Create a primary LPARS that runs database servers](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server#creating-power-virtual-server). This includes both sites: primary and secondary.
 - Create and attach disks for Oracle software that is provided by IBM PowerVS (tier 1)
 - Optional: [Importing a boot image](/docs/power-iaas?topic=power-iaas-importing-boot-image)
@@ -105,7 +99,7 @@ As a best practice, create a non-production environment similar to a production 
 ### Network architecture guidance
 {: #network-guidance}
 
-![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.svg){: caption="Figure 3. IBM Power Virtual server environment networking topology" caption-side="bottom"}
+![IBM Power Virtual server environment networking topology](image/pvs-on-ibm-networking-ibm-pvs.svg){: caption="IBM Power Virtual server environment networking topology" caption-side="bottom"}
 
 This figure shows required network components from customer Data center to IBM Power Systems Virtual Server.
 
@@ -129,7 +123,7 @@ Following the [Architecture Design Framework](/docs/architecture-framework?topic
 - **Resiliency:** High Availability, Backup and Restore,
 - **Service Management:** Monitoring, Logging, Auditing, Alerting
 
-![Oracle resiliency architecture design scope](image/pvs-on-ibm-heat-map.svg){: caption="Figure 4. Architecture Design Framework" caption-side="bottom"}
+![Oracle resiliency architecture design scope](image/pvs-on-ibm-heat-map.svg){: caption="Architecture Design Framework" caption-side="bottom"}
 
 The Architecture Design Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more information, see [Introduction to the Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro).
 
@@ -146,7 +140,7 @@ The following represents a baseline set of requirements that we believe are appl
 | Security                                                  | * Ensure that all operator actions are run securely through a bastion host. \n * Protect the boundaries of the application against denial-of-service and application-layer attacks. \n * Encrypt all application data in transit and at rest to protect it from unauthorized disclosure. \n * Encrypt all backup data to protect it from unauthorized disclosure. \n * Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \n * Encrypt all data by using customer-managed keys to meet regulatory compliance requirements for more security and customer control. \n * Protect secrets through their entire lifecycle and secure them using access control measures. |
 | Resiliency                                                | Support application availability targets and business continuity policies. \n * Provide highly available compute, storage, network, and other cloud services to handle application load and performance requirements. \n * Backup application data to enable recovery if unplanned outages occur. \n * Provide highly available storage for security data (logs) and backup data.                                                                                                                                                                                                                                                                                                                                 |
 | Service Management                                        | * Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. \n * Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize downtime. \n * Monitor audit logs to track changes and detect potential security problems. \n * Provide a mechanism to identify and send notifications about issues that are found in audit logs.                                                                                                                                                                                                                                |
-| {: caption="Table 1. Requirements" caption-side="bottom"} |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+{: caption="Requirements" caption-side="bottom"}
 
 ## Components
 {: #components}
@@ -173,10 +167,10 @@ The common solution components that are listed in the following table are those 
 |                                                         | [Cloud Internet Services (CIS)](/docs/cis?topic=cis-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Public DDoS protection and Web App Firewall                                                                                                               |
 |                                                         | [Key Protect](/docs/key-protect) or [HPCS](/docs/hs-crypto?topic=hs-crypto-get-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | HSM and Key Management Service (KYOK)                                                                                                                     |
 |                                                         | [Secrets Manager](https://cloud.ibm.com/catalog/services/secrets-manager){: external}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Certificate and Secrets Management                                                                                                                        |
-|                                                         | Firewall:<br />[Fortigate](https://cloud.ibm.com/catalog/content/ibm-fortigate-AP-HA-terraform-deploy-5dd3e4ba-c94b-43ab-b416-c1c313479cec-global){: external}<br />[Juniper vSRX](https://cloud.ibm.com/catalog/content/juniper-vsrx-catalog-deploy-1.4-dc1e707c-33dd-4321-b2a5-c22dbf0dd0ee-global){: external}<br />[Checkpoint Cloud Guard](https://cloud.ibm.com/catalog/content/checkpoint-iaas-gw-ibm-vpc-1.0.7-9ed8dbde-2931-45f5-a7a7-0c90ce0d2686-global){: external}<br />[Palo Alto](https://cloud.ibm.com/catalog/content/ibmcloud-vmseries-1.9-6470816d-562d-4627-86a5-fe3ad4e94b30-global){: external} | IPS/IDS protection at all ingress/egress points Unified Threat Management (UTM) Firewall                                                                  |
+|                                                         | Firewall: \n [Fortigate](https://cloud.ibm.com/catalog/content/ibm-fortigate-AP-HA-terraform-deploy-5dd3e4ba-c94b-43ab-b416-c1c313479cec-global){: external} \n [Juniper vSRX](https://cloud.ibm.com/catalog/content/juniper-vsrx-catalog-deploy-1.4-dc1e707c-33dd-4321-b2a5-c22dbf0dd0ee-global){: external} \n [Checkpoint Cloud Guard](https://cloud.ibm.com/catalog/content/checkpoint-iaas-gw-ibm-vpc-1.0.7-9ed8dbde-2931-45f5-a7a7-0c90ce0d2686-global){: external} \n [Palo Alto](https://cloud.ibm.com/catalog/content/ibmcloud-vmseries-1.9-6470816d-562d-4627-86a5-fe3ad4e94b30-global){: external} | IPS/IDS protection at all ingress/egress points Unified Threat Management (UTM) Firewall                                                                  |
 | Service Management (Observability)                      | [IBM Cloud Monitoring](/docs/monitoring?topic=monitoring-about-monitor)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Apps and operational monitoring                                                                                                                           |
 |                                                         | [IBM Cloud Logs](/docs/cloud-logs?topic=cloud-logs-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Apps and operational logs                                                                                                                                 |
 |                                                         | [IBM Cloud Logs](/docs/cloud-logs?topic=cloud-logs-getting-started)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Audit logs                                                                                                                                                |
-| {: caption="Table 2. Components" caption-side="bottom"}
+{: caption="Components" caption-side="bottom"}
 
 As mentioned, the [Architecture Framework](/docs/architecture-framework?topic=architecture-framework-intro) is used to guide and determine the applicable aspects and domains for which architecture decisions need to be made based on customer requirements. The following sections in this deployment guide contain the considerations and architecture decisions for the aspects and domains that are contained in the PowerVS common elements for both Oracle resiliency solution patterns.

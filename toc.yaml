@@ -43,7 +43,6 @@ toc:
             navtitle: Resiliency
           - topic: service-management-design.md
             navtitle: Service management
-          - other-design.md
       - topicgroup:
           label: Architecture decisions
           topics:
@@ -63,7 +62,6 @@ toc:
       id: deploy
       topics:
       - deploy.md
-      - topic-8.md
   - navgroup:
       id: migrate
       topics:
@@ -72,7 +70,3 @@ toc:
       id: reference
       topics:
       - references-powervs.md
-  - navgroup:
-      id: help
-      topics:
-      - topic: topic-10.md
