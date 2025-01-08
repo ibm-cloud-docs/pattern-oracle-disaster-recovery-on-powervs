@@ -82,7 +82,7 @@ The primary environment workloads that are hosted in IBM include:
   - VPN connection: for managed services to provide cloud-managed operations.
   - Load Balancer: if the customer external load balancing.
   - Cloud internet Service: if DDoS and global load balancing is required.
-  - Virtual Private end points: are used to provide connectivity to cloud native services from each VPC. Monitoring tools: Activity tracker, Log DNA, and customer’s custom tools.
+  - Virtual Private end points: are used to provide connectivity to cloud native services from each VPC. Monitoring tools: IBM Cloud Logs, IBM Cloud Monitoring, and customer’s custom tools.
   - Backup Environment through IBM Storage Protect or Veeam.
 - Power VS Environment
 

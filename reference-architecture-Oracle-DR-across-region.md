@@ -58,8 +58,8 @@ The following figure describes an architecture approach for deploying a disaster
   - VPN connection: The connection for managed services to provide cloud-managed operations.
   - Load Balancer: An option if the customer needs a private application load balancer.
   - Cloud internet Service: An option  if public global load balancing or DDoS services are needed.
-  - Virtual Private end points: Used for connecting to IBM Cloud services over the private network such as Activity Tracker, Event Streams, or Cloud Object Storage.
-  - Monitoring tools: Tools include Activity tracker, Log DNA and IBM Cloud Monitoring.
+  - Virtual Private end points: Used for connecting to IBM Cloud services over the private network such as Event Streams or Cloud Object Storage.
+  - Monitoring tools: Tools include IBM Cloud Logs and IBM Cloud Monitoring.
   - Backup Environment through IBM Storage Protect or Veeam
 - Power VS Environment
 
