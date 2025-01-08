@@ -34,5 +34,5 @@ Implement incident detection, notification, escalation, discovery, and declarati
 
 Reference for service management for IBM Power Virtual server
 
-* <https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-monitor-sysdig/>
-* <https://cloud.ibm.com/docs/power-iaas?topic=power-iaas-at-events/>
+* [Monitoring](/docs/power-iaas?topic=power-iaas-monitor-sysdig/)
+* [Activity Logs](/docs/power-iaas?topic=power-iaas-at-events/)
