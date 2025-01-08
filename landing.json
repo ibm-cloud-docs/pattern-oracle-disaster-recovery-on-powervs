@@ -18,7 +18,7 @@
       },
       {
         "title": "Networking",
-        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-networking-design"
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-design-network"
       },
       {
         "title": "Security",
@@ -26,23 +26,23 @@
       },
       {
         "title": "Resiliency",
-        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-resiliency-design"
+        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-backup-restore-design"
       },
       {
         "title": "Service management",
-        "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-service-management-design"
+        "href": "docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-design-service-management"
       }
     ]
   },
   "section_architectures": [
     {
       "title": "Oracle Database Disaster Recovery between Customer DC and IBM PowerVS",
-      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-oracle-database-disaster-recovery-between-customer-dc-and-ibm-powervs",
+      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disastopic=pattern-oracle-disaster-recovery-on-powervs-Oracle-dr-ibm-clientdc-pvs",
       "deployable": false
     },
     {
       "title": "Oracle Database Disaster Recovery on IBM PowerVS Cross Region",
-      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-oracle-database-disaster-recovery-on-ibm-powervs-cross-region", 
+      "href": "/docs/pattern-oracle-disaster-recovery-on-powervs?topic=pattern-oracle-disaster-recovery-on-powervs-Oracle-dr-ibm-pvs", 
       "deployable": false
     }
   ]

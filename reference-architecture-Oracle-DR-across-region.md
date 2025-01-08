@@ -85,7 +85,7 @@ Review the key steps for setting up the Oracle Database and Data Guard in IBM Po
 - [Configure a private subnet](/docs/power-iaas?topic=power-iaas-configuring-subnet)
 - [Configure VPN for managed service team such as a Day 2 operation team needs VPN access](/docs/power-iaas?topic=power-iaas-VPN-connections)
 - [Site to Site VPN for resiliency purpose](https://cloud.ibm.com/media/docs/downloads/power-iaas-tutorials/PowerVS_VPN_Tutorial_v1.pdf){: external}
-- [Configure and integrate with VPC environment](/docs/power-iaas?topic=power-iaas-powervs-integration-x86-workloads)
+- [Configure and integrate with VPC environment](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams#per-vpc)
 - [Create a primary LPARS that runs database servers](/docs/power-iaas?topic=power-iaas-creating-power-virtual-server#creating-power-virtual-server). This includes both sites: primary and secondary.
 - Create and attach disks for Oracle software that is provided by IBM PowerVS (tier 1)
 - Optional: [Importing a boot image](/docs/power-iaas?topic=power-iaas-importing-boot-image)

@@ -108,8 +108,8 @@ Active Data Guard enables you to read while the data is syncing. There is no nee
 
 Ensure that you complete the prerequisites for IBM Power Virtual Server environment connectivity. Follow the necessary steps for a secured connection needed for a Power Virtual server environment. The Customer Data center connection to IBM Power virtual servers details are described in the [Cloud Docs](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams). For more information, see:
 
-- [Connecting to VPC through Direct link](/docs/power-iaas?topic=power-iaas-ordering-direct-link-connect).
-- [Connecting to Customer DC through Mega port](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams#network-reference-architecture-onprem).
+- [Connecting to VPC](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams#per-vpc).
+- [Connecting to Customer DC](/docs/power-iaas?topic=power-iaas-network-architecture-diagrams#per-on-orem ).
 
 To configure the Power Virtual Server and Oracle Database:
 

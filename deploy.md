@@ -34,7 +34,7 @@ Complete the following steps before you deploy the VPC landing zone deployable a
    * If you have a Trial or Lite account, [upgrade your account](/docs/account?topic=account-upgrading-account).
 2. Configure your IBM Cloud account:
    1. Log in to [IBM Cloud](https://cloud.ibm.com/) with the IBMid you used to set up the account. This IBMid user is the account owner and has full IAM access.
-   2. [Complete the company profile](/docs/account?topic=account-contact-info) and contact information for the account. This profile is required to stay in compliance with IBM Cloud Financial Services profile.
+   2. [Complete the company profile](/docs/account?topic=account-usersettings#customer-profile) and contact information for the account. This profile is required to stay in compliance with IBM Cloud Financial Services profile.
    3. Enable virtual routing and forwarding (VRF) and service endpoints by creating a support case. Follow the instructions in [enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#vrf).
 
 ### Set the IAM permissions

@@ -12,7 +12,7 @@ keywords:
 # Migration solution approach
 {: #migration-approach}
 
-When workloads are deployed on a new system, you must pay attention to its configuration and tuning to achieve the expected performance. Power Virtual Server uses different IBM Power Systems: E980 (9080-M9S), S922 (9009-22A), and S1022 (9105-22A). For more information, see [Hardware specifications](/docs/power-iaas?topic=power-iaas-about-virtual-server#hardware-specifications).
+When workloads are deployed on a new system, you must pay attention to its configuration and tuning to achieve the expected performance. Power Virtual Server uses different IBM Power Systems: E980 (9080-M9S), S922 (9009-22A), and S1022 (9105-22A). For more information, see [Hardware specifications](/docs/power-iaas?topic=power-iaas-on-cloud-architecture#hardware-specifications-on-cloud).
 
 For AIX, Power Virtual Server supports only AIX 7.1 or later. If you use an unsupported version, it is subject to outages during planned maintenance windows with no advanced notification given. Your current AIX level and POWER processor family can help determine which migration path to follow.
 
@@ -30,7 +30,7 @@ Before you migrate to a newer IBM Power System, review the following checklist:
 1.  Follow the I/O consideration guide.
 
 ## Migration approach options
-{: #migration approach}
+{: #migration-approach-options}
 
 | Approach                                                        | Power VS options                                                                                                                                                                             | Solution guidance                                                                                                                                                                                                                                                                                                                                              |
 | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -18,7 +18,7 @@ Power Systems Virtual Server users can implement any compatible agent-based back
 
 IBM Storage Protect is recommended. As an alternative option, Veeam is supported as well. {: note}
 
-For more information, see [backup strategies](https://www.ibm.com/docs/fr/power-systems-vs?topic=strategies-backup-power-systems-virtual-servers#backup-aix){: external} and [implementation guides](https://cloud.ibm.com/media/docs/downloads/power-iaas-tutorials/PowerVS_AIX_Backups_Tutorial_v1.pdf){: external}.
+For more information, see [backup strategies](https://www.ibm.com/docs/fr/power-virtual-server?topic=strategies-backup-aix-linux-instances){: external} and [implementation guides](https://cloud.ibm.com/media/docs/downloads/power-iaas-tutorials/PowerVS_AIX_Backups_Tutorial_v1.pdf){: external}.
 
 | **Architecture decision** | **Requirements** | **Decision**                     | **Rationale**                                                                                                                                                                                                          |
 |---------------------------|------------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
