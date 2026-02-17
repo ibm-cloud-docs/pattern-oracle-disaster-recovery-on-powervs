@@ -1,13 +1,7 @@
-#  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
----
 toc:
   properties:
     subcollection: pattern-oracle-disaster-recovery-on-powervs
-   # industry: industry-value
     use-case: Public cloud
-   # compliance: compliance-value
     audience: solution
     content-type: deployment
     href: /docs/pattern-oracle-disaster-recovery-on-powervs
@@ -24,7 +18,6 @@ toc:
       topics:
       - reference-architecture-Oracle-DR-across-region.md
       - reference-architecture-Oracle-DR-across-Cloud-and-On-premises.md
- 
   - navgroup:
       id: plan
       topics:
