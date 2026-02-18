@@ -22,4 +22,4 @@ keywords:
 6. [PowerVS Documentation](/docs/power-iaas)
 7. [IBM Power Systems Community](https://community.ibm.com/community/user/power/home){: external}
 8. [IBM Redbook – Oracle on Power Systems](https://www.redbooks.ibm.com/redbooks/pdfs/sg248485.pdf){: external}
-9. [IBM VMRM](https://www.ibm.com/docs/en/vmrmdr/1.7?topic=overview){: external}
+9. [IBM VMRM](https://www.ibm.com/docs/en/vmrmdr/1.9.0?topic=overview){: external}
